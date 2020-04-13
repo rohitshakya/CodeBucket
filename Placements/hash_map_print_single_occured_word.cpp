@@ -1,0 +1,32 @@
+//write an efficient program to print words in order which are occuring once in huge a document
+//challenge is to maintain order, because hashmap doesn't maintain oder;
+//You can use map instead of unordered_map, but it maintains order in ascending order, also does'nt solve our problem.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	fstream f;
+	string word,filename;
+	filename="rohit.txt";
+	f.open(filename.c_str());
+	unordered_map<string, int> wordFreq;
+	
+	while(f>>word)
+	{
+		wordFreq[word]++; 
+    	cout<<word<<" ";
+	}
+	cout<<endl;
+   unordered_map<string, int>:: iterator p; 
+    for (p = wordFreq.begin(); p != wordFreq.end(); p++) 
+    {
+    	if(p->second==1)
+    	{
+    		cout << p->first<<" ";	
+		}
+    	
+	}
+        
+}
+
+    
