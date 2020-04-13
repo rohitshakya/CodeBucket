@@ -22,7 +22,7 @@ void countApplesAndOranges(int s, int t, int a, int b,int apples[],int oranges[]
 		}
 	}
 	cout<<countapp<<endl<<countora;
-    // Complete this function
+
     
 }
 
