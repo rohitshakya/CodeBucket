@@ -17,14 +17,11 @@ int main()
     	cout<<word<<" ";
 	}
 	cout<<endl;
-   unordered_map<string, int>:: iterator p; 
+    unordered_map<string, int>:: iterator p; 
     for (p = wordFreq.begin(); p != wordFreq.end(); p++) 
     {
     	if(p->second==1)
-    	{
-    		cout << p->first<<" ";	
-		}
-    	
+    	cout << p->first<<" ";	 	
 	}
         
 }
