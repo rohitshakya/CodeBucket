@@ -1,6 +1,7 @@
 //write an efficient program to print words in order which are occuring once in huge a document
 //challenge is to maintain order, because hashmap doesn't maintain oder;
-//You can use map instead of unordered_map, but it maintains order in ascending order, also does'nt solve our problem.
+//You can use map instead of unordered_map, but it maintains order in ascending order, also doesn't solve our problem.
+//Used reverse iterator
 #include<bits/stdc++.h>
 using namespace std;
 int main()
@@ -17,7 +18,9 @@ int main()
     	cout<<word<<" ";
 	}
 	cout<<endl;
-    unordered_map<string, int>:: iterator p; 
+  unordered_map<string, int>:: iterator p; 
+   // map<string,int>:: iterator p;                              //traverse map alphabetically
+   // map<string,int>:: reverse_iterator p;                      //traverse map alphabetically in reverse ordered( use rbegin() and rend())
     for (p = wordFreq.begin(); p != wordFreq.end(); p++) 
     {
     	if(p->second==1)
