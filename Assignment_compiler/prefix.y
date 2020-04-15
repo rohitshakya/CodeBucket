@@ -13,17 +13,17 @@
 %% 
 
 S : E 
-E : E'+'{A1();}T{A2();} 
-| E'-'{A1();}T{A2();} 
+E : E'+'{push();}T{pop();} 
+| E'-'{push();}T{pop();} 
 | T 
 ; 
-T : T'*'{A1();}F{A2();} 
-| T'/'{A1();}F{A2();} 
+T : T'*'{push();}F{pop();} 
+| T'/'{push();}F{pop();} 
 | F 
 ; 
-F : '('E{A2();}')'
-| '-'{A1();}F{A2();} 
-| ID{A3();} 
+F : '('E{pop();}')'
+| '-'{push();}F{pop();} 
+| ID{show();} 
 ; 
 
 %% 
@@ -40,17 +40,18 @@ int main()
 	printf("\n"); 
 	return 0; 
 } 
-A1() 
+push() 
 { 
 	st[top++]=yytext[0]; 
 } 
 
-A2() 
+pop() 
 { 
 	printf("%c", st[--top]); 
 } 
 
-A3() 
+show() 
 { 
 	printf("%c", yytext[0]); 
 } 
+
