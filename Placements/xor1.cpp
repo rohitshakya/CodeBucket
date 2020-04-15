@@ -5,6 +5,8 @@
  * Compiler : g++ 5.1.0
  * flags    : -std=c++14
  */
+ // Find the single element in the array
+ 
 #include<bits/stdc++.h>
 using namespace std;
 int main()

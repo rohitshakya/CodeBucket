@@ -5,7 +5,7 @@
  * Compiler : g++ 5.1.0
  * flags    : -std=c++14
  */
-//pattern 2
+
 /* 
  1
  2 3

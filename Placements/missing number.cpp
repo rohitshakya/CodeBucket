@@ -6,8 +6,10 @@
  * flags    : -std=c++14
  */
 
-/* Missing number
+/* Missing number by sum formula
 	1 5 4 6 7 3
+	Issue: int doesn't store more than 32 bit, consume a large amount of calculation time
+	Solution: Use XOR operation in for loop
 */
 #include<bits/stdc++.h>
 using namespace std;

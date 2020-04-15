@@ -5,6 +5,7 @@
  * Compiler : g++ 5.1.0
  * flags    : -std=c++14
  */
+ //Swapping 2 numbers without third variable and with bit manipulation
 #include<bits/stdc++.h>
 using namespace std;
 int main()
