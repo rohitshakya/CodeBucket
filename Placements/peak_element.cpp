@@ -1,3 +1,10 @@
+/*
+ * Author : Rohit Shakya
+ * Date   : April-2020
+ *
+ * Compiler : g++ 5.1.0
+ * flags    : -std=c++14
+ */
 /*Find the peak element in the array
 Following corner cases give better idea about the problem.
 If input array is sorted in strictly increasing order, the last element is always a peak element. 

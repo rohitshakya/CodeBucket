@@ -1,8 +1,14 @@
+/*
+ * Author : Rohit Shakya
+ * Date   : April-2020
+ *
+ * Compiler : g++ 5.1.0
+ * flags    : -std=c++14
+ */
+
 /* Missing number
-n=7, 
 	1 5 4 6 7 3
-	missing number
-	*/
+*/
 #include<bits/stdc++.h>
 using namespace std;
 int main()

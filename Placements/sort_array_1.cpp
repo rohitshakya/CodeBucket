@@ -1,3 +1,10 @@
+/*
+ * Author : Rohit Shakya
+ * Date   : April-2020
+ *
+ * Compiler : g++ 5.1.0
+ * flags    : -std=c++14
+ */
 /*Given an array A of positive integers, write a program to sort them in such a way that the first part of the array contains
 odd numbers sorted in descending order and rest of the portion contains even numbers in asceneding order.
 example: 0 4 5 3 7 2 1

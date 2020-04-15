@@ -1,3 +1,12 @@
+/*
+ * Author : Rohit Shakya
+ * Date   : April-2020
+ *
+ * Compiler : g++ 5.1.0
+ * flags    : -std=c++14
+ */
+
+
 //write an efficient program to print words in order which are occuring once in huge a document
 //challenge is to maintain order, because hashmap doesn't maintain oder;
 //You can use map instead of unordered_map, but it maintains order in ascending order, also doesn't solve our problem.
