@@ -5,17 +5,18 @@
  * Compiler : g++ 5.1.0
  * flags    : -std=c++14
  */
- // Find the single element in the array
- 
 #include<bits/stdc++.h>
 using namespace std;
 int main()
 {
-	int a[]={3,4,5,6,2,3,4,5,6};
-	int v=0;
-	for(int i=0;i<9;i++)
+	//position of rightmost set bit;
+	int x=100;
+	int position=1;
+	while(!(x&1))
 	{
-		v=v^a[i];
+		position++;
+		x=x>>1;
 	}
-	cout<<v;
+	cout<<"Position of right most set bit "<<position<<endl;
 }
+
