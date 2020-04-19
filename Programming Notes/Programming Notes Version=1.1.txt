@@ -1,1 +1,2 @@
 1 Always use scanf() function after the use of EOF(end of file character), if you want to read more inputs in a program. Since cin operator doesn't work after the EOF.
+ex: scanf("%d", &var);
