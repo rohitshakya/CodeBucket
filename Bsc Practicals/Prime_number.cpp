@@ -1,3 +1,10 @@
+/*
+ * Author : Rohit Shakya
+ * Date   : June-July 2016
+ *
+ * Compiler : g++ 5.1.0
+ * flags    : -std=c++14
+ */
 #include<iostream>
 using namespace std;
 int main()
@@ -9,19 +16,12 @@ int main()
 	{
 		int flag=0;
 	
-	for(int i=2;i<j/2;i++)
+	for(int i=2;i<=j/2;i++)
 	{
 		if(j%i==0)
-		{
-			flag=1;
-		
-		}
+		flag=1;	
 	}
 	if(flag==0)
-	
-	  {
-		cout<<j<<"@*$\t";
-	  }
-	  
+	cout<<j<<" ";  
    }
 }
