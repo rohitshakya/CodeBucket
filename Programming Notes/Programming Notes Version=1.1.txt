@@ -1,2 +1,6 @@
 1 Always use scanf() function after the use of EOF(end of file character), if you want to read more inputs in a program. Since cin operator doesn't work after the EOF.
 ex: scanf("%d", &var);
+2 Distance(s.begin(), it) is used to find the index of iterator in a set.(O based indexing)
+// for vector use it-it2s
+3.We use greater<int> in a data structure and greater<int>() in a function call to sort descending.
+4.There is no need of define iterators in vectors.
