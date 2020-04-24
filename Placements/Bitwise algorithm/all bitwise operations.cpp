@@ -24,6 +24,9 @@ int main()
 	x=17;
 	x=-(~x);
 	cout<<"add 1 to 5: "<<x<<endl; //add 1 to the integer
+	x=17;
+	x=~(-x);
+	cout<<"subtract 1 from 5: "<<x<<endl; //subtract 1 to the integer
 	
 	x=18;
 	x=x&(x-1); 
