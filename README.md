@@ -1,3 +1,3 @@
 # CodeBucket
-Repository for Coding problems,
+#100 Days of code
 Expand your horizons!!
