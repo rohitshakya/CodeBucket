@@ -18,6 +18,9 @@ void display(int x);
 int main()
 {
 	int z=convertStringToInt();
+	if(z=-1)
+	cout<<"Enter the correct date"<<endl;
+	else
 	display(z);
 }
 
@@ -30,9 +33,15 @@ int convertStringToInt()
 	d=((int)date[0]-48)*10+((int)date[1]-48);
 	m=((int)date[3]-48)*10+((int)date[4]-48);
 	y=((int)date[6]-48)*1000+(((int)date[7]-48)*100)+(((int)date[8]-48)*10)+((int)date[9]-48);
-	int q=currentdate(d,m,y);
-	int p=lastdayofpreviousyear(d,m,y);
-	return (p+q)%7;
+	if(d>=1&&d<=31&&m>=1&&m<=12&&y>=1&&y<=9999)
+	{
+		int q=currentdate(d,m,y);
+		int p=lastdayofpreviousyear(d,m,y);
+		return (p+q)%7;
+	}
+	else
+	return -1;
+	
 }
 int lastdayofpreviousyear(int d,int m,int y)
 {
