@@ -18,7 +18,7 @@ void display(int x);
 int main()
 {
 	int z=convertStringToInt();
-	if(z=-1)
+	if(z==-1)
 	cout<<"Enter the correct date"<<endl;
 	else
 	display(z);
