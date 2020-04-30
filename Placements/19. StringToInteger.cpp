@@ -1,0 +1,26 @@
+/*
+ * Author : Rohit Shakya
+ * Date   : April-2020
+ * Compiler : g++ 4.9.2
+ * flags    : -std=c++14
+ * time complexity : O(n)
+ * title :  conversion integer string to integer value
+ */
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	string abc="1000";
+	int x=0;
+	stringstream g(abc);
+	g>>x;
+	cout<<"by string stream method "<< x;
+	cout<<endl;
+	int y=0;
+	for(int i=0;i<abc.length();i++)
+	{
+		y=y*10;
+		y=y+int(abc[i])-48;
+	}
+	cout<<"by ascii value "<<y;
+}
