@@ -5,9 +5,6 @@ class abc
 	public:
 		abc operator+(abc arya)
 		{
-//			cout<<a<<endl<<b<<endl;
-//			cout
-//			<<arya.a<<endl<<arya.b;
          a=a+arya.a;
          b=b+arya.b;
          return *this;
@@ -22,9 +19,7 @@ int main()
 	ob2.a=50;
 	ob2.b=70;
 	ob.a=1000;
-	ob.b=2000;
-	
+	ob.b=2000;	
 	ob=ob+ob2;
 	cout<<ob.a<<endl<<ob.b;
 }
-//////
