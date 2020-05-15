@@ -6,6 +6,7 @@
  * Time complexity : O(n)
  * Title : check whether all items are same 
  */
+#include<bits/stdc++.h>
 using namespace std;
 bool testJackpot(std::vector<std::string> v) {
     vector<string>::iterator it; 
