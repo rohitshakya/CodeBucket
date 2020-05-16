@@ -7,12 +7,13 @@
  * Title : atm pin validation 
  */
 bool validatePIN(std::string pin) {
-	if(pin.length()<4||pin.length()>6) return false;
-	if(pin.length()==5) return false;
-	for(int i=0;i<pin.length();i++)
+	if(pin.length()==4||pin.length()==6)
 	{
+		for(int i=0;i<pin.length();i++)
 		if((char)pin[i]<48||(char)pin[i]>57) return false; break;
+		return true;
 	}
-	return true;
+	else
+	return false;
 	
 }
