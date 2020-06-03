@@ -6,6 +6,7 @@
  * Time complexity : O(n)
  * Title :  return a sentence where each word has a first letter capital
  */
+ //rohit IS a Good boy to Rohit IS A Good Boy.
 
 std::string makeTitle(std::string str) {
 	int flag=0;

@@ -10,23 +10,24 @@
 using namespace std;
 int main()
 {
+	//method 1
 	string abc="1000";
 	int x=0;
 	stringstream g(abc);
 	g>>x;
-	cout<<"by string stream method "<< x;
+	cout<<"by string stream method "<< x<<endl
 	cout<<endl;
+	//method 2
 	int y=0;
 	for(int i=0;i<abc.length();i++)
 	{
 		y=y*10;
 		y=y+int(abc[i])-48;
 	}
-	cout<<"by ascii value "<<y;
+	cout<<"by ascii value "<<y<<endl;
+	//method 3
 	int num=3456;
-	 stringstream str1; 
-    // Sending a number as a stream into output 
-    // string 
+	stringstream str1; 
     str1 << num;
     string sr;
     str1>>sr;

@@ -22,11 +22,11 @@ bool small(char c)
 std::string asciiCap(std::string str) {
 	for(int i=0;i<str.length();i++)
 	{
-		if(!((char)str[i]&1))
+		if(!((char)str[i]&1)) //even to cap
 		{
 			if(small(str[i])) str[i]=(char)str[i]-32;
 		}
-		else if((char)str[i]&1)
+		else if((char)str[i]&1) //odd to small
 		{
 			if(cap(str[i])) str[i]=(char)str[i]+32;
 		}

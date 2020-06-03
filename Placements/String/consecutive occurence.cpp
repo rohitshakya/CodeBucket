@@ -6,6 +6,7 @@
  * Time complexity : O(n)
  * Title :  consecutive occurence
  */
+ //aaabbbssdef to absdef
 using namespace std;
 std::string unstretch(std::string word) {
 	string s="";

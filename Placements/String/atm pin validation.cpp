@@ -6,6 +6,7 @@
  * Time complexity : O(1)
  * Title : atm pin validation 
  */
+ //4567 or 567875
 bool validatePIN(std::string pin) {
 	if(pin.length()==4||pin.length()==6)
 	{
