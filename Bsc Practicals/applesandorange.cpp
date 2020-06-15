@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 
 void countApplesAndOranges(int s, int t, int a, int b,int apples[],int oranges[],int m,int n) {
@@ -8,34 +7,20 @@ void countApplesAndOranges(int s, int t, int a, int b,int apples[],int oranges[]
 	for(int i=0;i<m;i++)
 	{
 		if(apples[i]>=s-a&&apples[i]<=t-a)
-		{
-			countapp++;
-		}
-		
+		countapp++;
 	}
 	for(int i=0;i<n;i++)
 	{
         
 		if(oranges[i]>=s-b&&oranges[i]<=t-b)
-		{
-			countora++;
-		}
+		countora++;
 	}
 	cout<<countapp<<endl<<countora;
-
-    
 }
 
 int main() {
-    int s;
-    int t;
-    cin >> s >> t;
-    int a;
-    int b;
-    cin >> a >> b;
-    int m;
-    int n;
-    cin >> m >> n;
+    int s,t,a,b,m,n;
+    cin >> s >> t>>a>>b>>m>>n;
     int apple[m];
     for(int apple_i = 0; apple_i < m; apple_i++){
        cin >> apple[apple_i];
