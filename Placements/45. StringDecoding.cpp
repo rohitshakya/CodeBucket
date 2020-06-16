@@ -19,11 +19,18 @@ bool checkValidity(vector<int> &v)
 int countDecoding(vector<int> &v)
 {
 	int count=0;
-	for(int i=1;i<v.size();i++)
+	int commonSetCount=0;
+	int i;
+	for(i=1;i<v.size()-1;i++)
 	{
 		if(v[i-1]*10+v[i]<=26) count++;
+		if((v[i-1]*10+v[i]<=26)&&(v[i]*10+v[i+1]<=26)) commonSetCount++;
 	}
-	return pow(2,count);
+	if(v[i-1]*10+v[i]<=26) count++;
+	count-=2*commonSetCount;
+//	cout<<"count: "<<count<<" common: "<<commonSetCount<<endl;
+	int totalCount=pow(2,count)*pow(3,commonSetCount);
+	return totalCount;
 	
 }
 int main()
