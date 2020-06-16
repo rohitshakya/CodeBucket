@@ -18,7 +18,6 @@ int main()
 	if(c==0)
 	{
 		cout<<"number not found"<<endl;
-		
 	}
 	else
 	cout<<"number found"<<endl;
@@ -28,23 +27,9 @@ int binary(int a[],int n,int x,int l,int u){
 	if(l<=u)
 	{
 		mid=(l+u)/2;
-		if(x=a[mid])
-		{
-			c=1;
-			
-		}
-		if(x<a[mid])
-		{
-			return binary(a,n,x,l,mid-1);
-			
-		}
-		
-		if(x>a[mid])
-		{
-			return binary(a,n,x,mid+1,u);
-			
-		}
-		
+		if(x=a[mid]) c=1;
+		if(x<a[mid]) return binary(a,n,x,l,mid-1);
+		if(x>a[mid]) return binary(a,n,x,mid+1,u);
 	}
 }
 
