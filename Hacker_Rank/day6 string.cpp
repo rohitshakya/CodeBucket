@@ -1,13 +1,14 @@
-#include <cmath>
+
 /*
  * Author : Rohit Shakya
  * Date   : June-2020
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
- * Time complexity : O(1)
+ * Time complexity : O(n)
  * Title :  30 days of code/day 6 string
  */
 #include <cstdio>
+#include <cmath>
 #include <vector>
 #include <iostream>
 #include <algorithm>
