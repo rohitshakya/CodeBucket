@@ -7,7 +7,7 @@
 * Edabit.com
 * HackerEarth  
 ## Coding Style
-* BasedOnStyle: Chromium  
+* Style: [Chromium](https://chromium.googlesource.com/chromium/src/+/master/styleguide/styleguide.md)  
 * Standard C++11
 
 
