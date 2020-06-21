@@ -1,12 +1,12 @@
 # CodeBucket
 #100 Days of code  
-### References  
-
+### References
 * LeetCode
 * HackerRank
 * CodeChef
 * Edabit.com
-* HackerEarth
+* HackerEarth  
+
 [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)  
 BasedOnStyle: Chromium
 AccessModifierOffset: '-4'
