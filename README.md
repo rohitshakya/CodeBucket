@@ -1,13 +1,13 @@
 # CodeBucket
-#100 Days of code  
+#100 Days of code
 ### References
 * LeetCode
 * HackerRank
 * CodeChef
 * Edabit.com
-* HackerEarth    
+* HackerEarth  
 ## Coding Style
-BasedOnStyle: Chromium
-Standard C++11
+* BasedOnStyle: Chromium  
+* Standard C++11
 
 
