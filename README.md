@@ -8,6 +8,7 @@
 * HackerEarth  
 ## Coding Style
 * Style: [Chromium](https://chromium.googlesource.com/chromium/src/+/master/styleguide/styleguide.md)  
-* Standard C++11
+* Standard C++14  
+* Compiler: g++ 4.9.2
 
 
