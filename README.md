@@ -1,6 +1,6 @@
 # CodeBucket
 #100 Days of code, 
-### Refrences
+### References
 * LeetCode
 * HackerRank
 * CodeChef
