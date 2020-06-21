@@ -1,5 +1,5 @@
 # CodeBucket
-#100 Days of code, 
+#100 Days of code  
 ### References
 * LeetCode
 * HackerRank
