@@ -17,22 +17,21 @@ int main()
 	int n;
 	cin>>n;
 	cout<<"number:"<<n<<endl;
-	int min;
-	if(n==3) min=2;
+	int min=1;
+	if(n==2||n==3) min=2;
 	else
 	{
 		for(int x=1;x<n;x++)
 	{
-		int t=(x*x)+x;
-		if(t>n)
+		int t=(x*x+x)/2;
+		if(t>=n)
 		{
 			min=x;
 			break;
 		}
 		
 	}	
-	++min;
 	}
 	cout<<min;
-	}
+}
 }
