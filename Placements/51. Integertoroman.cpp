@@ -3,7 +3,7 @@
  * Date   : June-2020
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
- * Time complexity : O(n)
+ * Time complexity : O(1)
  * Title : integer to roman conversion
  */
 #include<bits/stdc++.h>
