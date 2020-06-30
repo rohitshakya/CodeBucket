@@ -3,8 +3,8 @@ using namespace std;
 int main()
 {
 	string s;
+	cout<<"enter a roman number in capital letters"<<endl;
 	cin>>s;
-	cout<<s;
 	int sum=0;
 	int flag=0;
 	for(int i=0;i<s.length();i++)
@@ -85,9 +85,6 @@ int main()
 				sum=sum+3;
 				flag=37;
 			}
-			
-			
-			
 			break;
 			case 'I': 
 			if(flag==0||flag==1000||flag==500||flag==100||flag==50||flag==10||flag==5||flag==1||flag==501||flag==101)
@@ -101,5 +98,5 @@ int main()
 			break;
 		}
 	}
-	cout<<sum;
+	cout<<"Numeral conversion of roman "<<s<<" is: "<<sum;
 }
