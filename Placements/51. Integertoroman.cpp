@@ -1,6 +1,6 @@
 /*
  * Author : Rohit Shakya
- * Date   : July-2020
+ * Date   : June-2020
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
  * Time complexity : O(n)
@@ -19,6 +19,7 @@ int main()
 		return 0;	
 	}
 	vector<int> place(4,0);
+	string roman="";
 	int i=3;
 	int w=n;
 	while(n)
@@ -26,11 +27,7 @@ int main()
 		place[i--]=n%10;
 		n=n/10;
 	}
-	string roman="";
-	for(int i=1;i<=place[0];i++)
-	{
-		roman+="M";
-	}
+	for(int i=1;i<=place[0];i++) roman+="M";
 	if(place[1]==9) roman+="CM";
 	else
 	{
@@ -40,32 +37,20 @@ int main()
 		if(c==4) roman+="CD";
 		else
 		{
-			for(int i=1;i<=c;i++)
-			{
-				roman+="C";
-			}
-			
+			for(int i=1;i<=c;i++) roman+="C";
 		}
-			
 	}
 	if(place[2]==9) roman+="XC";
 	else
 	{
-		
 		int l=place[2]/5;
 		int x=place[2]%5;
 		if(l) roman+="L";
 		if(x==4) roman+="XL";
 		else
 		{
-			for(int i=1;i<=x;i++)
-			{
-				roman+="X";
-			}
-			
+			for(int i=1;i<=x;i++) roman+="X";
 		}
-		
-		
 	}
 	if(place[3]==9) roman+="IX";
 	else
@@ -76,15 +61,9 @@ int main()
 		if(p==4) roman+="IV";
 		else
 		{
-			for(int i=1;i<=p;i++)
-			{
-				roman+="I";
-			}
-			
+			for(int i=1;i<=p;i++) roman+="I";
 		}
 		
-		
-	}
-	
+	}	
 	cout<<"Roman conversion of "<<w<<" is: "<<roman;
 }
