@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include<iostream>
 using namespace std;
 int min(int a[],int n)
 {
@@ -56,11 +55,9 @@ int main() {
     }
     vector <int> result = cutTheSticks(arr,n);
     for (ssize_t i = 0; i < result.size(); i++) {
-        //cout << result[i] << (i != result.size() - 1 ? "\n" : "");
+        cout << result[i] << (i != result.size() - 1 ? "\n" : "");
     }
-    //cout << endl;
-
-
+    
     return 0;
 }
 

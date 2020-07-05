@@ -6,7 +6,6 @@ int main()
 	int n=10;
 	for(i=0;i<n;j++,i++)
 	{
-		
+		cout<<i<<j;	
 	}
-	cout<<i<<j;
 }
