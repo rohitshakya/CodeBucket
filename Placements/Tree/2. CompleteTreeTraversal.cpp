@@ -23,13 +23,13 @@ void printPreOrder(Node *root)
 {
 	if(root!=NULL)
 	{
-		cout<<root->data<<" ";	 //preorder traversal
+		cout<<root->data<<" ";	 //PreOrder Traversal
 		printPreOrder(root->left);
 		printPreOrder(root->right);
 	}
 	
 }
-void printInOrder(Node *root)
+void printInOrder(Node *root) //InOrder Traversal
 {
 	if(root!=NULL)
 	{
@@ -39,7 +39,7 @@ void printInOrder(Node *root)
 	}
 	
 }
-void printPostOrder(Node *root)
+void printPostOrder(Node *root) //PostOrder Traversal
 {
 	if(root!=NULL)
 	{
