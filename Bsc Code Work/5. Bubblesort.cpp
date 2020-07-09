@@ -7,23 +7,11 @@ int main()
 	cout<<"enter the size of array"<<endl;
 	cin>>n;
 	int a[n];
-	for(int i=0;i<n;i++)
-	{
-		cin>>a[i];
-		
-	}
-	for(int i=0;i<n;i++)
-	{
-		cout<<a[i]<<" ";
-		
-	}
+	for(int i=0;i<n;i++) cin>>a[i];
+	cout<<"\n";
 	bubblesort(a,n);
 	cout<<"array after bubble sort"<<endl;
-	for(int i=0;i<n;i++)
-	{
-		cout<<a[i]<<" ";
-		
-	}
+	for(int i=0;i<n;i++) cout<<a[i]<<" ";
 }
 int bubblesort(int a[],int n)
 {
