@@ -1,32 +1,31 @@
 /*
  * Author : Rohit Shakya
- * Date   : April-2020
+ * Date   : July-2020
  * Compiler : g++ 4.9.2
- * flags    : -std=c++14
- * time complexity : O(n)
- * title :  middle of the linked list
+ * Flags    : -std=c++14
+ * Time complexity : O(n)
+ * Title : middle of the linked list/ two pointer method/ slow-fast pointer
  */
-/**
+ /**
  * Definition for singly-linked list.
  * struct ListNode {
  *     int val;
  *     ListNode *next;
- *     ListNode(int x) : val(x), next(NULL) {}
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
  * };
  */
 class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
-        ListNode *ptr=head;
-        int count=0;
-        while(ptr!=NULL)
+        ListNode *fptr=head;
+        while(fptr!=NULL&&fptr->next!=NULL)
         {
-            count++;
-            ptr=ptr->next;
+            head=head->next;
+            fptr=fptr->next->next;
         }
-    for(int i=0;i<count/2;i++)
-    {
-        head=head->next;
-    }
         return head;
-    }};
+    }
+};
+
