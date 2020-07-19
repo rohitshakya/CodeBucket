@@ -5,21 +5,18 @@
  * flags    : -std=c++14
  * title :  Linked list operations
  */
-
 #include <bits/stdc++.h>
 using namespace std;
-
-struct node
+struct Node
 {
     int data;
-    node *next;
+    Node *next;
 };
 
-struct linked_list
+struct LinkedList
 {
-	int count=0;
-    node *head, *tail;
-    linked_list()
+    Node *head, *tail;
+    LinkedList()
     {
         head = NULL;
         tail = NULL;
@@ -27,11 +24,9 @@ struct linked_list
 
     void add_node(int n)
     {
-    	count++;
-        node *tmp = new node;
+        Node *tmp = new Node;
         tmp->data = n;
         tmp->next = NULL;
-
         if(head == NULL)
         {
             head = tmp;
@@ -43,23 +38,23 @@ struct linked_list
             tail = tail->next;
         }
     }
-    
 };
 
 int main()
 {
-    linked_list a;
+    LinkedList a;
     a.add_node(1);
     a.add_node(2);
-    a.add_node(34);
-    node *tmp;
+    a.add_node(3);
+    a.add_node(4);
+    a.add_node(7);
+    a.add_node(8);
+    Node *tmp;
     tmp=a.head;
     while(tmp!=NULL) //traverse from head to tail
     {
     	cout<<tmp->data<<" ";
     	tmp=tmp->next;
 	}
-	cout<<endl;
-	cout<<a.count; //count the number of nodes
     return 0;
 }
