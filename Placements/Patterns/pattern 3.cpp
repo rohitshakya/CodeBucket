@@ -1,7 +1,6 @@
 /*
  * Author : Rohit Shakya
  * Date   : April-2020
- *
  * Compiler : g++ 5.1.0
  * flags    : -std=c++14
  */
@@ -14,10 +13,8 @@ int main()
 	for(int i=1;i<=n;i++)
 	{
 		int k=n;
-		for(int j=1;j<=i-1;j++)
-		{
+		for(int j=1;j<=i-1;j++) 
 			cout<<" ";
-		}
 		for(int j=n;j>=i;j--)
 		{
 			cout<<k;
