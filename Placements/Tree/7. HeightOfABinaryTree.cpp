@@ -19,8 +19,6 @@ struct Node{
 		right=NULL;
 	}
 };
-void givenLevel(Node * root,int level);
-void levelOrder(Node * root);
 int height(Node *root)
 {
 	if(root==NULL) return -1;

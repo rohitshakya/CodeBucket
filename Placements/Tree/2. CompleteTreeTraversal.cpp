@@ -26,8 +26,7 @@ void printPreOrder(Node *root)
 		cout<<root->data<<" ";	 //PreOrder Traversal
 		printPreOrder(root->left);
 		printPreOrder(root->right);
-	}
-	
+	}	
 }
 void printInOrder(Node *root) //InOrder Traversal
 {
