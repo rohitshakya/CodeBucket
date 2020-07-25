@@ -4,7 +4,7 @@
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
  * Time complexity : O(n)
- * Title : level order traversal of a tree
+ * Title : ledt view of a tree
  */
 #include<iostream>
 using namespace std;

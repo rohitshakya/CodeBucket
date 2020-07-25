@@ -4,7 +4,7 @@
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
  * Time complexity : O(n)
- * Title :
+ * Title : Iterative traversal of a tree/ stack method
  */
 
 #include<bits/stdc++.h>
