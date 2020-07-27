@@ -7,7 +7,6 @@ public:
         {
             res[i]=res[i/2]+(i&1);
         }
-        return res;
-        
+        return res;  
     }
 };

@@ -1,7 +1,6 @@
 /*
  * Author : Rohit Shakya
  * Date   : April-2020
- *
  * Compiler : g++ 5.1.0
  * flags    : -std=c++14
  */ 

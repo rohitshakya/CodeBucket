@@ -27,7 +27,7 @@ int main()
 	int n=arr.size();
 	int first=0;
 	int last=n-1;
-	int middle=(first+last)/2;
+	int middle=first+(last-first)/2;
 	while(first<=last)
 	{
 		if(element<arr[middle])
@@ -43,7 +43,7 @@ int main()
 			cout<<"found at position "<<middle+1<<"\n";
 			break;
 		}
-		middle=(first+last)/2;
+		middle=first+(last-first)/2;
 		if(first>last)
 		{
 			cout<<"not found\n";

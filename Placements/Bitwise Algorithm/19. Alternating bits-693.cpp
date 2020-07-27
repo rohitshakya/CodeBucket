@@ -10,13 +10,15 @@
 class Solution {
 public:
     bool hasAlternatingBits(int n) {
-    	/*
-    	int m=n>>2;
-        n=n^m;
-        return !(n & (n - 1));
-		*/
         n^=n>>2;
         return !(n & (n - 1)); //important question 
-        
     }
 };
+/*
+101010
+001010
+100000
+011111
+000000~0
+1
+

@@ -10,8 +10,7 @@ public:
                 if(!(J[p]^S[m]))
                 {
                     count++;
-                }
-                
+                } 
             }
         }
         return count;

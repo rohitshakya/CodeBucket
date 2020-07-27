@@ -20,10 +20,8 @@ public:
          int n = sizeof(result)/sizeof(result[0]); 
         for(int i=0;i<n;i++)
         {
-            result2.push_back(result[i].first);
-            
+            result2.push_back(result[i].first);            
         }
         return result2;
-        
     }
 };

@@ -1,4 +1,4 @@
-//hamming distance
+//hamming distance: no of flipped bits while xor of a and b
 class Solution {
 public:
     int hammingDistance(int x, int y) {

@@ -2,7 +2,6 @@
 class Solution {
 public:
     int findComplement(int num) {
-  
     int i=0;
 	while(i<num)
 	{
