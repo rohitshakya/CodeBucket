@@ -30,7 +30,7 @@ int main()
 			break;
 		}
 		else if(v[i]+v[j]+v[p]>x) j--;
-		else if(v[i]+v[j]+v[p]<x) i++;
+		else i++;
 	}		
 	}
 	if(flag==0) cout<<"not found\n";

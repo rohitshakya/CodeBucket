@@ -1,9 +1,9 @@
 /*
  * Author : Rohit Shakya
  * Date   : April-2020
- *
  * Compiler : g++ 5.1.0
  * flags    : -std=c++14
+ * title : count the set bits
  */
 #include<bits/stdc++.h>
 using namespace std;

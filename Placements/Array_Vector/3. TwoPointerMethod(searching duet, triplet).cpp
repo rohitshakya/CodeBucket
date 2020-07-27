@@ -26,7 +26,7 @@ int main()
 			break;
 		}
 		else if((v[i])+(v[j])>x) j--;
-		else if((v[i])+(v[j])<x) i++;
+		else i++;
 	}
 	if(i==j) cout<<"Not found\n";
 }
