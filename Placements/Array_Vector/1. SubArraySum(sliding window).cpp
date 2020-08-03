@@ -8,7 +8,6 @@
  * Title : subarray sum to a given sum
  * Note: valid for non-negative numbers, for positive number use hashing
  */
- 
 #include<iostream>
 using namespace std;
 int main()
@@ -38,5 +37,4 @@ int main()
 		else
 		sum+=arr[i];
 	}
-	if(!flag) cout<<"Not found"<<endl;
-}
+	if(!flag) cout<<"Not found"<<endl;}
