@@ -29,5 +29,24 @@ int main()
 	int *p1=(int*)malloc(sizeof(int));
 	*p1=51;
 	cout<<p1<<endl;//value of p1 and address of 51 
-	cout<<*p1;
+	cout<<*p1<<endl;
+	int *p2;
+	for(int i=0;i<5;i++)
+	{
+		for(int j=0;j<=i;j++)
+		{
+			cout<<"*";
+			p2=(int*)malloc(sizeof(int));
+			*p2=j++;
+		}
+		cout<<endl;
+	}
+	for(int i=0;i<5;i++)
+	{
+		for(int j=0;j<=i;j++)
+		{
+			cout<<*p2;
+		}
+		cout<<endl;
+	}
 }
