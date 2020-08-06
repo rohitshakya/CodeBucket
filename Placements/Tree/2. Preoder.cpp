@@ -12,7 +12,6 @@ struct Node
     int data;
     struct Node* left;
     struct Node* right;
-    
     Node(int x){
         data = x;
         left = right = NULL;
@@ -25,5 +24,4 @@ void preOrder(Node* root)
     cout<<root->data<<" ";
     preOrder(root->left);
     preOrder(root->right);
-  
 }

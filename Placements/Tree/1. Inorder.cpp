@@ -11,8 +11,7 @@ struct Node
 {
     int data;
     struct Node* left;
-    struct Node* right;
-    
+    struct Node* right;    
     Node(int x){
         data = x;
         left = right = NULL;
@@ -26,5 +25,4 @@ void inOrder(Node* root)
     inOrder(root->left);
     cout<<root->data<<" ";
     inOrder(root->right);
-  
 }

@@ -4,7 +4,7 @@
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
  * Time complexity : O(n)
- * Title : print tree level order
+ * Title : print tree upside down
  */
 #include<iostream>
 using namespace std;
@@ -49,7 +49,7 @@ void givenLevel(Node *root, int level)
 void printLevelOrder(Node *root)
 {
 	int h=treeHeight(root);
-	for(int i=0;i<=h;i++)
+	for(int i=h;i>=0;i--)
 	{
 		givenLevel(root,i);
 		cout<<endl;
