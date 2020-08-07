@@ -21,12 +21,11 @@ class node
 		this->right = NULL; 
 	} 
 }; 
-bool isBst(node *root, int min,int max)
+bool isBst(node *root,int min, int max)
 {
 	if(root==NULL) return true;
-	if((root->data<min)||root->data>max) return false;
-	else
-	return isBst(root->left,min,root->data-1)&&isBst(root->right,root->data+1,max);
+	if(root->data<min||root->data>max) return false;
+	else return ((root->left,min,root->data-1)&&(root->right,root->data+1,max));
 }
 int main() 
 { 
@@ -39,7 +38,6 @@ int main()
 	if(isBst(root,INT_MIN,INT_MAX)) 
 		cout<<"Is BST"; 
 	else
-		cout<<"Not a BST"; 
-		
+		cout<<"Not a BST"; 		
 	return 0; 
 }

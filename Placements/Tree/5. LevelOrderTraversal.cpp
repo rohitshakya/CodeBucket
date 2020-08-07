@@ -19,12 +19,13 @@ struct Node{
 		this->right=NULL;
 	}
 };
-void printTree(Node *root)
+void printTree(Node *root, int &count)
 {
 	if(root==NULL) return;
 	cout<<root->data<<" ";
-	printTree(root->left);
-	printTree(root->right);
+	count++;
+	printTree(root->left,count);
+	printTree(root->right,count);
 }
 int treeHeight(Node *root)
 {
@@ -49,6 +50,7 @@ void givenLevel(Node *root, int level)
 void printLevelOrder(Node *root)
 {
 	int h=treeHeight(root);
+	bool flag=false;
 	for(int i=0;i<=h;i++)
 	{
 		givenLevel(root,i);
@@ -66,7 +68,17 @@ int main()
 	root->right->right=new Node(22);
 	root->left->left->left=new Node(29);
 	root->left->left->right=new Node(36);
-	printTree(root);
-	cout<<"tree height: "<<treeHeight(root)<<endl;
+	root->left->right->left=new Node(29);
+	root->left->right->right=new Node(16);
+	root->right->left->left=new Node(19);
+	root->right->left->right=new Node(32);
+	root->right->right->left=new Node(9);
+	root->right->right->right=new Node(3);
+	int count=0;
+	cout<<"Pre Order Traversal of tree:"<<endl;
+	printTree(root,count);
+	cout<<"\nCount of nodes: "<<count<<endl;
+	cout<<"Tree height: "<<treeHeight(root)<<endl;
+	cout<<"Level Order Traversal of tree:"<<endl;
 	printLevelOrder(root);
 }
