@@ -1,0 +1,414 @@
+Three cubes of edges 6 cms, 8 cms and 10 cms are meted without loss of metal into a single cube. The edge of the new cube will be:
+a) 16 cm
+b) 14 cm
+c) 12 cm
+d) 8 cm
+Answer: c) 12 cm
+Solution:
+Since the cube is melted so the volume of the new cube must be the same.
+Volume of new cube = Volume of cube 1 + cube 2 + cube 3 = 63 + 83 + 103 = 216 + 512 + 1000
+a^3 = 1728,
+a = (1728)^(1/3) = 12
+
+A reduction in the price of mangoes by 20% enables a farmer to purchase 12 more mangoes for Rs. 15. So what could be the price of 16 mangoes before the reduction of the price?
+a) Rs. 9
+b) Rs. 7
+c) Rs. 5
+d) Rs. 6
+
+
+Answer: c) Rs. 5
+Solution:
+We know that
+Price * Consumption = Expenditure
+and, Consumption = Expenditure Price
+So,
+(15 / 8x) – (15 / x) = 12
+x = (15 * 2) / (12 * 8)
+For 16 Mangoes = [(15 * 2) / (12 * 8)] * 16 = 5 (answer)
+
+Aman completes a journey in 10 hours. He travels first half of the journey at the rate of 21 km/hr and second half at the rate of 24 km/hr. Find the total journey in km.
+a) 220 km
+b) 234 km
+c) 230 km
+d) 224 km
+Answer: d) 224 km
+Solution:
+According to the question,
+((1/2)x)/21 + ((1/2)x)/24 = 10
+Solving this equation we get 15x = 168 * 20
+Further x = (168 * 20)/15 = 224 km.
+
+There are two alarm clocks ringing at regular intervals of 50 seconds and 48 seconds. If they first beep together at 12 noon, at what time will they beep again together?
+a) 12:10 PM
+b) 12:20 PM
+c) 12:11 PM
+d) 12:12 PM
+Answer: b) 12:20 PM 
+Solution:
+This can be found by finding the LCM of 48 and 50.
+They will ring together after,
+LCM of 48 and 50 secs.
+48 = 2*2*2*2*3;
+50 = 2*5*5;
+So, LCM = 2*2*2*2*3*5*5 = 1200 secs = 20 min.
+Therefore, they will beep together at 12:20 PM next.
+
+Ram purchased 20 dozens of toys at the rate of Rs. 375 per dozen. He sold each one of them at the rate of Rs. 33. What was his percentage profit?
+a) 5.6 %
+b) 4.5 %
+c) 3.5 %
+d) 6.5 %
+Answer: a) 5.6 %
+Solution:
+Let’s find the cost price of 1 toy = 375 / 12 = 31.25 rupees.
+Now, SP of 1 toy = 33 rupees.
+So, Gain = SP – CP = (33 – 31.25) = Rs. 1.75
+and Profit % = 1.75 / 31.25 * 100 = 5.6 %
+
+A cistern can be filled by a tap in 4 hours while it can be emptied by another tap in 9 hours. If both the taps are opened simultaneously, then after how much time cistern will get filled?
+a) 7 hours
+b) 7.1 hours
+c) 7.2 hours
+d) 7.3 hours
+
+
+Answer: 7.2 hours
+Solution:
+So according to the question,
+1/4 th of the cistern can be filled in one hour
+1/9 th of the cistern can be emptied in 1 hour
+Therfore, net filled in 1 hour = 1/4 – 1/9 = 5/36
+So cistern that can be filled in 36/5 hours = 7.2 hours
+
+In how many different ways, can the letters of the word ‘INHALE’ be arranged?
+a) 650 ways
+b) 360 ways
+c) 120 ways
+d) 720 ways
+Answer: d) 720 ways
+Solution:
+There are 6 letters in the word and no letters are repeated.
+So, the 6 letters can be arranged in 6! ways = 720 ways.
+
+In a meeting, there are 12 persons. All the persons of one country shake hands with all delegates of the other country. Find the number of handshakes possible?
+a) 66
+b) 288
+c) 144
+d) 234
+Answer: a) 66
+Solution:
+Total number of handshakes = n(n-1)/2=(12 * 11)/2 = 66
+
+What is the smallest number which when decreased by 8 is divisible by 21, 27, 33, and 55?
+a) 1490
+b) 10405
+c) 15490
+d) none of the above
+Answer: d) none of the above
+Solution:
+We need to find the LCM of the given numbers,
+LCM of 21, 27, 33, and 55 = 10395
+So we need to add an extra 5 = 10403 (answer)
+
+There are 8 football teams in a certain league and each team plays each of the other teams exactly once. If each game is played by 2 teams, what is the total number of games played?
+a) 15
+b) 16
+c) 64
+d) 28
+Answer: d) 28
+Solution:
+Since there are 8 teams, so each pair will pay a match = 8C2 = 28 matches.
+
+There are forty students in a class out of which there are 14 who are taking Maths and 29 who are taking Computer. What is the probability that a randomly chosen student from this group is taking only the Computer class?
+a) 40%
+b) 55%
+c) 65%
+d) 70%
+Answer: 60%
+Solution:
+There are in total of 40 students. 14 are taking Maths and 29 are taking calculus. Therefore there have to be 3 students who are taking both the classes. So, 29 – 3 = 26 students are taking only Computer. So probability = 26/40 = 13/20 = 65%
+
+Find the number, the second digit of which is smaller than its first digit by 4, and if the number was divided by the digit’s sum, the quotient would be 7.
+a) 51
+b) 62
+c) 73
+d) None of these
+
+
+Answer: d) None of these
+Solution: If we consider the number 84, then we get 8 – 4 = 4 and when the sum of digits that is 12 divides the number 84, we get 7.
+
+If all 6s get inverted and become 9s, between 1 and 100 then by how much will the sum of all numbers change including both?
+a) 300
+b) 330
+c) 333
+d) None of these
+Answer: b) 330
+Solution:
+For the 6 at the unit place:
+When the digits are changed to 9, each value will increase by 3. Since there are 10 such numbers, so total increase = 10 * 3 = 30
+For the 6 at 10’s place:
+When the digits are changed to 9, each value will increase by 30. Since there are 10 such numbers, so total increase = 10 * 30 = 300
+So the total increase will be 30 + 300 = 330
+
+Rajesh and Prabhu went to a bookshop. Rajesh purchased 5 pens, 3 notebooks and 9 pencils and used up all her money. Prabhu purchased 6 pens, 6 notebooks and 18 pencils and paid 50% more than what Rajesh paid. What % of the Rajesh money was spent on pens?
+a) 12.5
+b) 62.5
+c) 75
+d) Cannot be determined
+Answer: a) 12.5
+Solution:
+Let the amount spent by Rajesh be ‘x’
+
+According to the question,
+5 pen + 3 notebooks + 9 pecils = x
+and
+6 pens + 6 notebooks + 18 pencils = 1.5x
+
+By solving both the equations we get,
+pens = 0.125x = 12.5%
+
+In a group of persons travelling in a bus, 6 persons can speak Tamil, 15 can speak Hindi and 6 can speak Gujarati. In that group, none can speak any other language. If 2 persons in the group can speak two languages and one person can speak all the three languages, then how many persons are there in the group?
+a) 21
+b) 22
+c) 24
+d) 23
+
+
+Answer: d) 23
+Solution:
+Assuming the two persons who can speak two languages be Hindi and Tamil and the third person speaks all the three languages.
+Therefore, the number of people who can speak Tamil is 6. Only Tamil = 6 – 2 – 1 = 3
+Therefore, the number of people who can speak Hindi is 15. Only Hindi = 15 – 2 – 1 = 12
+Therefore, the number of people who can speak Gujarati is 6. Only Gujarati = 6 – 1 = 5
+Thus the number of persons who can speak only one language is 3 + 12 + 5 = 20
+Given,
+The number of persons who can speak two languages is 2
+The number of people who speak all three languages is 1
+Therefore the answer is 23.
+
+There are 2 trucks facing each other at a distance of 500 cm from each other. Each truck moves forward by 100 cm at a speed of 50 cm/s and then moves backwards by 50 cm at a speed of 25 cm/s. How long will they take to collide?
+a) 12 sec
+b) 16 sec
+c) 13 sec
+d) 14 sec
+Answer: d) 14 sec
+
+Solution:
+If we observe the series carefully running from time = 2 sec and hence,
+
+Moving forward:
+At 2 secs each truck will move to a distance of 100cms
+
+Moving backwards:
+At 4 secs each truck will move to a distance of 50cms
+
+Moving forward:
+At 6 secs each truck will move to a distance of 150cms
+
+Moving backwards:
+At 8 secs each truck will move to a distance of 100cms
+
+Moving forward:
+At 10 secs each truck will move to a distance of 200cms
+
+Moving backwards:
+At 12 secs each truck will move to a distance of 150cms
+
+
+
+Moving forward:
+At 14 secs each truck will move to a distance of 250cms and in all 500 cms that are the point they must collide.
+
+What is the greatest number that will divide 964, 1238 and 1400 and leave a remainder of 41, 31 and 51 respectively?
+a) 71
+b) 58
+c) 64
+d) 79
+Answer: a) 71
+Solution:
+To reach to the solution we just need to find the HCF of (964 – 41), (1238 – 31), (1400 – 51) = 923, 1207, 1349
+The HCF of 923, 1207 and 1349 = 71
+
+The average temperature of Monday, Tuesday and Wednesday were 37°C and on Tuesday, Wednesday and Thursday was 34°C. If the temperature on Thursday was 4/5 th of that of Monday, then what was the temperature on Thursday?
+a) 36 °C
+b) 36.5 °C
+c) 34 °C
+d) 35.5 °C
+Answer: a) 36 °C
+Solution:
+According to the question,
+Monday + Tuesday + Wednesday = 37 °C
+Tuesday + Wednesday + Thursday = 34 °C
+Thursday = 4/5 of Monday
+On solving the first two equations and substituting the values from the third condition we get the temperature of Thursday = 36 °C
+
+There are 6 cities, and every city is connected to each other. How many different routes can one trace from A to B, such that no city is touched more than once in any one route?
+a) 72
+b) 65
+c) 60
+d) 48
+Answer: b) 65
+Solution:
+There must be 1 direct route.
+There are 4 ways to cover 1 city
+There are 4 * 3 = 12 ways to cover 2 cities
+There are 4 * 3 * 2 ways to cover 3 cities
+There are 4 * 3 * 2 * 1 ways to cover 4 cities
+Total ways = 65 ways
+
+A secret can be said by only 2 persons in 5 minutes. The same person tells the secret to 2 more persons and so on. How long will take to tell it to tell 768 persons?
+a) 500 min
+b) 50 min
+c) 47.5 min
+d) 49 min
+Answer: c) 47.5 min 
+Solution:
+One person telling to 2 means he takes 2.5 min to tell the secret to 1 person,
+So 1 person telling the truth to another 2 people and the next two telling the truth to the next two who in turn are telling another 2 people and so on…
+Therefore a series is formed of 1 to 2, 2 to 4, 4 to 8, 8 to 16 and so on…
+Therefore a series of 1, 2, 4, 8, 16, 32,…, 512
+Till 512 it would take
+Till this will take 45 minutes and now these people i.e., 256 will be telling the truth to only 1 of the total person will be 768,
+Therefore, 45 + 2.5 = 47.5 min
+
+Find the remainder when (100!)^100 is divided by 23?
+a) 3
+b) 2
+c) 1
+d) 0
+Answer: d) 0
+Solution:
+We know that 100! = 100 * 99 * 98 * … * 23 * 22 * 21 * … * 3 * 2 * 1
+So when this equation is divided by 23, the remainder is 0.
+
+One pipe can fill a bucket three times as fast as another pipe. If together the two pipes can fill the bucket in 36 minutes, then the slower pipe alone will be able to fill the bucket in:
+a) 144 minutes.
+b) 81 minutes.
+c) 108 minutes.
+d) 192 minutes.
+
+
+Answer: a) 144 minutes.
+Solution:
+Let us assume that the slower pipe can fill the bucket in x minutes.
+So the faster tap can feel the bucket in x/3 minutes.
+According to the question,
+Therefore,
+1/x+1/(x/3)
+1/x + 3/x = 1/36
+=> x = 144 minutes.
+
+Aman’s speed with the current is 15 km/hr and the speed of the current is 2.5 km/hr. What is Aman’s speed against the current?
+a) 8.5 km/hr
+b) 9 km/hr
+c) 10 km/hr
+d) 12.5 km/hr
+Answer: c) 10 km/hr
+Solution:
+So Aman’s rate in still water = (15 – 2.5) = 12.5 km/hr.
+and Aman’s rate against the current = (12.5 – 2.5) km/hr = 10 km/hr.
+
+Seats for Mathematics, Physics and Biology in a school are in the ratio 5:7:8. There is a proposal to increase these seats by 40%, 50% and 75% respectively. What will be the ratio of increased seats?
+a) 6:7:8
+b) 2:3:4
+c) 6:8:9
+d) None of the above
+Answer: b) 2:3:4
+Solution:
+Let the ratios of division be = 5x:7x:8x
+There is an increase of 40%, 50% and 75% respectively.
+Therefore, applying the % over the ratio we get, 7x:21x/2:14x
+So, this is the required ratio.
+= 14x : 21x: 28x
+= 2 : 3 : 4
+
+A hollow iron pipe is 21 cm long and its external diameter is 8 cm. If the thickness of the pipe is 1 cm and iron weighs 8 g/cm3, then the weight of the pipe is:
+a) 3.6 kg
+b) 3.696 kg
+c) 36 kg
+d) 36.9 kg
+Answer: b) 3.696 kg
+Solution:
+Given the external diameter = 8 cm. Therefore, the radius = 4 cm.
+The thickness = 1 cm. Therefore the internal radius = 4 – 1 = 3 cm
+The volume of the iron = pi * (R^2 – r^2) * length
+= 22/7 * [(4^2) – (3^2)] * 21 cubic-cm
+= 462 cubic-cm
+Therefore, the weight of iron = 462 * 8 gm = 3.696 kg
+
+Rohit’s father is three times elder than Rohit. After 8 years, he would be two and a half times of Rohit’s age. After a further 8 years, how many times would he be of Rohit’s age?
+a) 2 times
+b) 2.5 times
+c) 2.75 times
+d) 3 times.
+
+
+Answer: a) 2 times
+Solution:
+Let Rohit present age be x years
+Therefore father’s age is x + 3x = 4x years
+According to the question,
+4x + 8 = 5/2(x + 8)
+=> 3x = 24
+=> x = 8
+So the answer is: (4x + 16) / (x + 16) = 48/24 = 2
+
+A tap can fill a bucket in 6 hours. After half the bucket is filled, three more similar taps are opened. What is the total time taken to fill the bucket completely?
+a) 3 hrs 45 min
+b) 3 hrs 15 min
+c) 4 hrs 15 min
+d) 4 hrs 45 min
+Answer: a) 3 hrs 45 min
+Solution:
+Time is taken by one tap to fill half the bucket = 3 hours
+So the part filled 4 taps in one hour = 4 * (1/6) = 2/3 of the bucket.
+Therefore, the remaining part is = (1 – 1/2) = 1/2
+Proportinally = 2/3 : 1/2 :: 1 : x
+=> x = 3/4 hours = 45 minutes. So the total time = 3 hrs 45 minutes.
+
+A ship, whose speed in 15 km/hr in still water goes 30 km downstream and comes back in a total of 4 hours 30 minutes. What is the speed of the stream in km/hr?
+a) 4
+b) 6
+c) 5
+d) 10
+Answer: c) 5
+Solution:
+Let the speed of the stream be x km/hr.
+Therfore the, speed of downstream = (15 + x) km/hr,
+and speed of upstream = (15 – x) km/hr.
+According to the question,
+30/(15 + x) + 30/(15 – x) = 9/2
+or, 900/(225 – x^2) = 9/2
+or, 9x^2 = 225
+or, x^2 = 25
+or, x = 5 km/hr.
+
+In a mixture 60 litres, the ratio of milk to water is 2:1. If this ratio is to be 1:2, then what is the quantity of water needed to be further?
+a) 60 litres
+b) 50 litres
+c) 40 litres
+d) 30 litres
+Answer: a) 60 litres
+Solution:
+From the given ratio we can deduce the quantity of milk as = 60 * (2/3) = 40 lit
+and the quantity of water = 60 – 40 = 20 lit
+The new ratio must be 1:2
+Let the quantity of water to be added be x lit.
+Then milk:water = 40 / (20 + x)
+This should be equal to = 1/2
+=> 20 + x = 80
+or, x = 60
+
+A hall is 15 m long and 12 m broad. If the sum of the areas of the floor and the ceiling is equal to the sum of the areas of four walls, the volume of the hall is:
+a) 720
+b) 1200
+c) 900
+d) 1800
+Answer: b) 1200
+Solution:
+According to the question,
+2(15 + 12)*h = 2(15 * 12)
+=> h = (180/27) = 20/3 meter
+Therefore, the volume = l * b * h = (15 * 12 * 20/3) cubic-meter = 1200 (answer)
