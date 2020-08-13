@@ -1,35 +1,28 @@
-/*
- * Author : Rohit Shakya
- * Date   : July-2020
- * Compiler : g++ 4.9.2
- * Flags    : -std=c++14
- * Time complexity : O(n)
- * Space : O(n)
- * Title : subarray sum to a given sum
- * Note: valid for negative numbers
- */
- 
 #include<bits/stdc++.h>
 using namespace std;
 int main()
 {
 	int arr[]={1,2,5,7,12,56,34};
-	int given;
-	cout<<"enter given number"<<endl;
-	cin>>given;
-	int init=0, sum=0;
-	int flag=0;
+	int n=sizeof(arr)/sizeof(arr[0]);
+	int sum;
+	cout<<"enter sum"<<endl;
+	cin>>sum;
+	int curr_sum=0;
 	map<int,int> m;
-	for(int i=0;i<7;i++)
+	for(int i=0;i<n;i++)
 	{
-		sum+=arr[i];
-		if (m.find(sum-given) != m.end()) 
-        { 
-            cout << "Sum found between indexes "<< m[sum] + 1 << " to " << i << endl; 
-            flag=1;
-            break;
-        } 
-        m[sum] = i;  
+		curr_sum+=arr[i];
+		if(sum==curr_sum)
+		{
+			cout<<"found at 0 to "<<i<<endl;
+			return 0;
+		}
+		if(m.find(curr_sum-sum)!=m.end())
+		{
+			cout<<"found at "<<m[curr_sum - sum] + 1 << " to " << i << endl;
+			return 0;
+		}	
+		m[curr_sum]=i;
 	}
-	if(!flag) cout<<"Not Found\n";
+    cout << "No subarray with given sum exists"<<endl;
 }
