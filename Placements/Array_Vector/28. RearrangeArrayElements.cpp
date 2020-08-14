@@ -3,22 +3,11 @@
  * Date   : Aug-2020
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
- * Time complexity :
- * Title :
+ * Time complexity : O(n)
+ * Title : Rearrange array elements according to the given index
  */
-er_none
-edit
-play_arrow
-
-brightness_4
-// A O(n) time and O(1) extra space C++ program to 
-// sort an array according to given indexes 
 #include<iostream> 
-  
 using namespace std; 
-  
-// Function to reorder elements of arr[] according 
-// to index[] 
 void reorder(int arr[], int index[], int n) 
 { 
     // Fix all elements one by one 
@@ -27,38 +16,27 @@ void reorder(int arr[], int index[], int n)
         // While index[i] and arr[i] are not fixed 
         while (index[i] != i) 
         { 
-            // Store values of the target (or correct)  
-            // position before placing arr[i] there 
-            int  oldTargetI  = index[index[i]]; 
-            char oldTargetE  = arr[index[i]]; 
-  
-            // Place arr[i] at its target (or correct) 
-            // position. Also copy corrected index for 
-            // new position 
-            arr[index[i]] = arr[i]; 
-            index[index[i]] = index[i]; 
-  
-            // Copy old target values to arr[i] and 
-            // index[i] 
-            index[i] = oldTargetI; 
-            arr[i]   = oldTargetE; 
+            int  oldTargetIndex  = index[index[i]];// 1
+            int oldElement  = arr[index[i]]; //60
+            //Swap old index and old element with (index i and arr[i])
+            arr[index[i]] = arr[i]; //60 becomes 50 in target array
+            index[index[i]] = index[i]; //1 becomes 3
+            index[i] = oldTargetIndex; //3 becomes 1 in index array
+            arr[i]   = oldElement; //50 becomes 60 in target array
+            //repeat the process till index[i] not equal to i
         } 
     } 
 } 
   
-// Driver program 
 int main() 
 { 
     int arr[] = {50, 40, 70, 60, 90}; 
     int index[] = {3,  0,  4,  1,  2}; 
-    int n = sizeof(arr)/sizeof(arr[0]); 
-  
+    int n = sizeof(arr)/sizeof(arr[0]);   
     reorder(arr, index, n); 
-  
     cout << "Reordered array is: \n"; 
     for (int i=0; i<n; i++) 
         cout << arr[i] << " "; 
-  
     cout << "\nModified Index array is: \n"; 
     for (int i=0; i<n; i++) 
         cout << index[i] << " "; 
