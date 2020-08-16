@@ -1,0 +1,30 @@
+class Solution {
+public:
+    bool checkStraightLine(vector<vector<int>>& coordinates) {
+     double slope,s;
+        if(coordinates.size()==2 || coordinates.size()==1)
+            return true;
+        
+        if((coordinates[1][0]-coordinates[0][0])==0)// infinity
+            slope=INT_MAX; 
+        else
+            slope=(double)(coordinates[1][1]-coordinates[0][1])/(coordinates[1][0]-coordinates[0][0]);
+        
+        for(int i=2;i<coordinates.size();i++)
+        {
+            
+            //find slope with first point
+            if((coordinates[i][0]-coordinates[0][0])==0) 
+                s=INT_MAX; 
+             else
+                s=(double)(coordinates[i][1]-coordinates[0][1]) / (coordinates[i][0]-coordinates[0][0]);
+            if(s!=slope)
+                return false;
+        }
+        return true;   
+    }
+};
+
+
+
+

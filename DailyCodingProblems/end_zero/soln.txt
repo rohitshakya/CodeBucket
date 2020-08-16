@@ -1,0 +1,37 @@
+
+#include <iostream>
+using namespace std;
+
+
+void end_zero(int arr[],int size)
+{
+    int s=size;
+  for(int i=0;i<s;)
+  {
+      if(arr[i]==0)
+      {
+          int j=i;
+          while(j<s-1)
+          {
+          arr[j]=arr[j+1];
+          j++;
+          }
+          arr[s-1]=0;
+          s--;
+          
+      }
+      else
+       i++;
+  }
+  cout<<"\n now array is ";
+  for(int i=0;i<size;i++)
+  cout<<arr[i]<<" ";
+}
+
+int main() {
+    int arr[]={1,2,0,0,0,3,6};
+    int size= sizeof(arr) / sizeof(arr[0]);
+    cout<<"size is "<<size;
+    end_zero(arr,size);
+	return 0;
+}
