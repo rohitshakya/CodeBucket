@@ -1,0 +1,15 @@
+
+
+
+class Solution {
+public:
+    int maximumProduct(vector<int>& nums) {
+    int size=nums.size();
+        sort(nums.begin() , nums.end());
+        int max1= nums[size-1]*nums[size-2]*nums[size-3];      // 3 positive nums
+        int max2=nums[0]*nums[1]*nums[size-1];              // first 2 negatve and 1 large positive
+        return max(max1 , max2);
+    }
+};
+
+

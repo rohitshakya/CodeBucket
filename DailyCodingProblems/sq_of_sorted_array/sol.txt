@@ -1,0 +1,29 @@
+
+
+class Solution {
+public:
+    vector<int> sortedSquares(vector<int>& A) {
+    int start=0;
+        int end=A.size()-1;
+        int pos=A.size()-1;
+        vector<int> res(A.size() , 0);
+        
+        while(start<=end)
+        {
+            if(abs(A[start]) < abs(A[end]))
+            {
+                res[pos]=A[end]*A[end];
+                pos--;
+                end--;
+            }
+            else
+            {
+                res[pos]=A[start]*A[start];
+                pos--;
+                start++;   
+                
+            }
+        }
+        return res;
+        }
+};

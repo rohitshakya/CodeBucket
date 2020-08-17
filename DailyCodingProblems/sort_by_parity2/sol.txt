@@ -1,0 +1,58 @@
+
+
+class Solution {
+public:
+    vector<int> sortArrayByParityII(vector<int>& A) {
+       
+        int oddInd = 1; 
+        int evenInd = 0; 
+        int temp;
+        int n = A.size();
+        while (true) 
+        { 
+            while (evenInd < n && A[evenInd] % 2 == 0) 
+                evenInd += 2; 
+              
+            while (oddInd < n && A[oddInd] % 2 == 1) 
+                oddInd += 2; 
+              
+            if (evenInd < n && oddInd < n){
+                temp = A[evenInd];
+                A[evenInd] = A[oddInd];
+                A[oddInd] = temp;
+            }    
+            else
+                break; 
+        }
+        
+        return A;
+       }
+};
+
+
+
+/*
+int oddIndex = 1, evenIndex = 0;
+	vector<int> res(A.size());
+	for (int i = 0; i < A.size(); i++)
+	{
+		if (A[i] % 2 == 0)
+		{
+			res[evenIndex] = A[i];
+			evenIndex += 2;
+		}
+		else
+		{
+			res[oddIndex] = A[i];
+			oddIndex += 2;
+		}
+	}
+	return res;
+*/
+
+
+
+
+
+
+

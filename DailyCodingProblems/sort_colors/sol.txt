@@ -1,0 +1,34 @@
+/// Dutch National Flag Problem
+class Solution {
+public:
+    void sortColors(vector<int>& nums) {
+        if(nums.size()==0)
+            return;
+        int start=0;
+        int end=nums.size()-1;
+        int curr=0;
+        while(curr<=end)
+        {
+            if(nums[curr]==0)
+            {
+                nums[curr]=nums[start];
+                nums[start]=0;
+                start++;
+                curr++;
+            }
+            else if(nums[curr]==2)
+            {
+                nums[curr]=nums[end];
+                nums[end]=2;
+                end--;
+            }
+            else
+                curr++;
+        }
+        
+        }
+};
+
+
+
+

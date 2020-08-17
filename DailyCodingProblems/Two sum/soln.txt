@@ -1,0 +1,22 @@
+#include <unordered_map>
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+    unordered_map<int, int> hash;
+      for(int i=0;i<nums.size();i++)
+      {
+          hash.put(nums[i],i);
+      }
+        for(Map.Entry<int , int> j :hash.entryset())
+        {
+        if( hash.find(target-j.getKey()))
+        {
+            int r1=hash.getValue(j);
+              int r2=x
+                  hash.getValue(target-j);
+        return {r1,r2};
+        }
+        }
+        return {-1,-1};
+    }
+};
