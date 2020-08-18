@@ -1,0 +1,176 @@
+#include <iostream>
+#define STACK_SIZE 100
+using namespace std;
+
+int top1 = 0;
+int top2 = (STACK_SIZE/3);
+int top3 = 2*(STACK_SIZE/3);
+
+
+void pushTo(int stackNo, int val, int array [])
+{
+	switch (stackNo)
+	{
+		case 1:
+		{
+			if(top1==top2)
+			{
+				throw("Stack Overflow at Stack 1" );
+			}
+			else
+			{	
+				array[top1++] = val;
+			}
+			break;
+		}
+		case 2:
+		{
+			if(top2==top3)
+			{
+				throw("Stack Overflow at Stack 2 ");
+			}
+			else
+			{	
+				array[top2++] = val;
+
+			}
+			break;
+		}
+		case 3:
+		{
+			if(top3==100)
+			{
+				throw("Stack Overflow at Stack 3");
+			}
+			else
+			{	
+				array[top3++] = val;
+
+			}
+			break;
+
+		}
+		default:
+		{
+			throw("Invalid Stack ID");
+		}
+	}
+}
+int popFrom(int stackNo, int array [])
+{
+	switch (stackNo)
+	{
+		case 1:
+		{
+			if(top1==-1)
+			{
+				throw("Stack Underflow at Stack 1");
+			}
+			else
+			{	
+				top1 --;
+				return array[top1 + 1];
+
+			}
+			break;
+		}
+		case 2:
+		{
+			if(top2==(STACK_SIZE/3) - 1 )
+			{
+				throw("Stack Underflow at Stack 2");
+			}
+			else
+			{	
+				top2 --;
+				return array[top2 - 1];
+
+			}
+			break;
+		}
+		case 3:
+		{
+			if(top3== 2 * (STACK_SIZE/3) - 1)
+			{
+				throw("Stack Underflow at Stack 3");
+			}
+			else
+			{	
+				top3 --;
+				return array[top3 - 1];
+			}
+			break;
+
+		}
+		default:
+		{
+			throw("Invalid Stack ID");
+		}
+	}	
+}
+bool isEmpty(int stackNo)
+{
+	switch(stackNo)
+	{
+		case 1:
+		{
+			return top1 == 0;
+		}
+		case 2:
+		{
+			return top2 == (STACK_SIZE/3);
+		}
+		case 3:
+		{
+			return top3 == 2 * (STACK_SIZE/3);
+		}
+		default:
+		{
+			throw("Invalid Stack ID");
+		}
+	}
+}
+int main()
+{	int array[STACK_SIZE];
+	for (int i = 0 ; i < 25 ; i ++)
+	{
+		pushTo(1 , i , array);
+		pushTo(2 , i * 2, array);
+	}
+	for(int i = 0 ; i < 20 ; i ++)
+	{
+		cout << popFrom(2,array) << " ";
+	}
+	cout<< endl;
+
+	try
+	{
+		for ( int i = 0 ; i < 35  ; i ++)
+		{
+			pushTo(3, i , array);
+		}
+	}
+	catch(const char * e)
+	{
+		cout << e << endl;
+	}
+
+	for(int i = 0 ; i < 34 ; i ++)
+	{
+		cout << popFrom(3,array) << " ";
+	}
+	cout<< endl;
+
+	for(int i = 1 ; i < 4 ; i++)
+	{
+		if (isEmpty(i))
+			cout << "Stack " << i << " is empty."<<endl;
+		else
+			cout << "Stack " << i << " is not empty."<<endl;
+	}
+	cout<< "Stack1 top: "<< top1 << ". Stack2 top: "<< top2 << ". Stack3 top: "<< top3 <<"."<<endl;
+
+}
+
+
+

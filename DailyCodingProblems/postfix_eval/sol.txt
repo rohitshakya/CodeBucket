@@ -1,0 +1,48 @@
+#include <iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int evaluatePostfix(char exp[])
+{
+    stack <int> s;
+    for(int i=0;exp[i];i++)
+    
+    {
+        if (isdigit(exp[i]))
+              s.push(exp[i]-'0');
+        else     // if operator
+        {
+            int x=s.top();
+            s.pop();
+            int y=s.top();
+            s.pop();
+            switch(i)
+            {
+                case '+': s.push(x+y);
+                          break;
+                case '-': s.push(x-y);
+                          break;
+                case '*': s.push(x+y);
+                          break;          
+            
+                case '/': s.push(x/y);
+                          break;
+            }
+        }
+    }
+    return s.top();
+}
+
+
+
+
+
+int main()
+{
+    char exp[] = "231*+9-";  
+    cout<<"postfix evaluation: "<< evaluatePostfix(exp);  
+    return 0;  
+}
+
+

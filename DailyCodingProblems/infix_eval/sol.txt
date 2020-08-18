@@ -1,0 +1,136 @@
+#include<iostream>
+#include<stack>
+
+using namespace std;
+
+int pri(char ch)
+{
+    switch (ch)
+    {
+    	case '(':
+    		return 1;
+	    case '+':
+	    case '-':
+	        return 2;
+
+	    case '*':
+	    case '/':
+	        return 3;
+
+	    case '^':
+	        return 4;
+    }
+    return -1;
+}
+
+int main(void){
+	char str[] = "3+4*5*(4+3)-1/2+1";
+	int k = 0;
+	stack<char> operator_stack;
+	stack<int> operand_stack;
+	cout <<"InFix Expression: " << str << endl;
+	int i = 0;
+	while(str[i] != '\0')
+	{
+		if(str[i] == '(')
+		{
+			operator_stack.push('(');
+		}
+		else if(str[i] == ')')
+		{
+			while(operator_stack.top() != '(')
+			{
+				int r = operand_stack.top();
+				operand_stack.pop();
+				int l = operand_stack.top();
+				operand_stack.pop();
+				switch(operator_stack.top())
+				{
+				    case '+':operand_stack.push( l + r);
+				             break;
+                    
+				    case '-':operand_stack.push(abs( l - r));
+				             break;
+				             
+				    case '*':operand_stack.push( l * r);
+				             break;
+				             
+				    case '/':operand_stack.push( l / r);
+				             break;
+				             
+				    case '^':operand_stack.push( l ^ r);
+				             break;
+				}
+			  operator_stack.pop(); 
+			}
+			operator_stack.pop();
+		}
+		else if(str[i] == '+' || str[i] == '-' || str[i] == '*' || str[i] == '/' || str[i] == '^')
+		{
+			int pC = pri(str[i]);
+			while(!operator_stack.empty() && pri(operator_stack.top()) >= pC)
+			{
+				int r = operand_stack.top();
+				operand_stack.pop();
+				int l = operand_stack.top();
+				operand_stack.pop();
+			switch(operator_stack.top())
+				{
+				    case '+':operand_stack.push( l + r);
+				             break;
+                    
+				    case '-':operand_stack.push(abs( l - r));
+				             break;
+				             
+				    case '*':operand_stack.push( l * r);
+				             break;
+				             
+				    case '/':operand_stack.push( l / r);
+				             break;
+				             
+				    case '^':operand_stack.push( l ^ r);
+				             break;
+				}
+			
+			
+				operator_stack.pop(); 
+			}
+			operator_stack.push(str[i]);
+		}
+		else
+		{
+			operand_stack.push(str[i]- '0');
+		}
+		i++;
+	}
+	while(!operator_stack.empty()){
+		int r = operand_stack.top();
+		operand_stack.pop();
+		int l = operand_stack.top();
+		operand_stack.pop();
+		switch(operator_stack.top())
+				{
+				    case '+':operand_stack.push( l + r);
+				             break;
+                    
+				    case '-':operand_stack.push(abs( l - r));
+				             break;
+				             
+				    case '*':operand_stack.push( l * r);
+				             break;
+				             
+				    case '/':operand_stack.push( l / r);
+				             break;
+				             
+				    case '^':operand_stack.push( l ^ r);
+				             break;
+				}
+		operator_stack.pop(); 
+	}
+
+	cout <<"Result: " << operand_stack.top() << endl;
+	return 0;
+}
+
+
+

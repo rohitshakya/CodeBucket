@@ -1,0 +1,38 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+
+// to check string palindrome or not
+
+bool check(string str)
+{
+    stack<char> s;
+    int i=0;
+    int j=str.length()-1;
+    while(str[i]!='X')
+    {
+        s.push(str[i]);
+        i++;
+    }
+    i++;     //x ke agey se traverse kro
+    while(!s.empty())
+    {
+        if(s.top()==str[i])
+        {
+            i++;
+            s.pop();
+        }
+        else
+        return false;
+    }
+    return true;
+}
+int main()
+{
+    string str="aabcXcbaa";
+    cout<< "string is \n"<<str;;
+    bool out=check(str);
+    cout<<" ans is ="<<out;
+    return 0;
+}
+

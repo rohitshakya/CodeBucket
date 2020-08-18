@@ -1,0 +1,51 @@
+/*We use a stack to store each layer of the directory.
+We loop the path and parse each directory separating by /
+
+If we get an empty directory or ., we do nothing
+If we get a .., we pop out the top element from the stack (if it is not empty)
+If we get anything else, we push the directory to the stack
+At the end, we reconstruct the simplified path from the stack and return.
+*/
+class Solution {
+public:
+    string simplifyPath(string path) {
+        stack<string> st;
+        int i = 0;
+        string cur = "";
+        path += '/';
+        // loop path and construct stack
+        while (i < path.size()) {
+            if (path[i] == '/') {
+                if (!cur.empty()) {
+                    if (cur == ".") {
+                        // do nothing
+                    }
+                    else if (cur == "..") {
+                        // remove the last dir
+                        if (!st.empty()) {
+                            st.pop();
+                        }
+                    }
+                    else {
+                        // append the cur dir
+                        st.push(cur);
+                    }
+                }
+                cur.clear();
+                i += 1;
+            }
+            else {
+                cur += path[i];
+                i += 1;
+            }
+        }
+        // construct result string from stack
+        string rst = "";
+        while (!st.empty()) {
+            rst = "/" + st.top() + rst;
+            st.pop();
+        }
+        if (rst.empty()) rst += '/';
+        return rst;
+    }
+};
