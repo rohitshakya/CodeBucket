@@ -1,0 +1,23 @@
+class Solution {
+public:
+    bool isPowerOfFour(int num) {
+  //  1 set bit only and it is at odd position
+
+        int c=0;
+        int num1=num;
+        //  all even positions are 0 possibility that only odd bits are set
+         num=num & 0xAAAAAAAA;
+      if (num==0)
+       {
+        while(num1)
+        {
+            num1=num1 & (num1-1);
+            c++;
+        }
+       }
+        if (c==1)
+            return true;
+        else
+             return false;
+    }
+};

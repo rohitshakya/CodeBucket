@@ -1,0 +1,19 @@
+class Solution {
+public:
+    int findComplement(int num) 
+    {
+        int flip,ans=0;
+        if(num==0)
+            return 1;
+         int pos=0;
+          while(num)
+          {
+          
+            flip=(num&1)^1;
+            ans=ans+(flip<<pos);
+            pos++;
+            num=num>>1;
+         }
+        return ans;
+    }
+};

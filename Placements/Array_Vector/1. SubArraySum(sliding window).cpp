@@ -37,4 +37,5 @@ int main()
 		else
 		sum+=arr[i];
 	}
-	if(!flag) cout<<"Not found"<<endl;}
+	if(!flag) cout<<"Not found"<<endl;
+	}
