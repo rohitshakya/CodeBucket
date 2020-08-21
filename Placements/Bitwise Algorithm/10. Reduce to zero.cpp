@@ -1,4 +1,4 @@
-//number of steps to reduce zero
+//number of steps to reduce zero, if even divide if odd minus 1
 class Solution {
 public:
     int numberOfSteps (int num) {

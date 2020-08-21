@@ -21,6 +21,7 @@ int search(int arr[],int n,int x)
 		else high=mid-1;
 	}
 	int rot=low;
+	cout<<rot<<endl;
 	low=0;
 	high=n-1;
 	while(low<=high)
@@ -36,6 +37,6 @@ int main()
 {
 	int arr[]={2,3,4,5,6,7,0,1};
 	int n=sizeof(arr)/sizeof(arr[0]);
-	int z=search(arr,n,4);
+	int z=search(arr,n,7);
 	cout<<z<<endl;
 }

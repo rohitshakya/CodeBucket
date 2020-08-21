@@ -5,9 +5,8 @@
  * Flags    : -std=c++14
  * Time complexity : O(nlogn) for sorting + O(n) for searching
  * Title : search two elements whose sum is equal to given number x
- * Notes : Array should be sorted
+ * Notes : For two pointer method, Array must be sorted
  */
-
 #include<bits/stdc++.h>
 using namespace std;
 int main()

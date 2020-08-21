@@ -12,11 +12,11 @@ int main()
 	int a=17,b=27; //Count number of bits to be flipped to convert A to B, 
 	//a^b contains only flipped bits, so count the set bits in a^b
 	int count=0;
-	a=a^b;
-	while(a)
+	axorb=a^b;
+	while(axorb)
 	{
-		count+=(a&1);
-		a>>=1;
+		count+=(aaxorb&1);
+		axorb>>=1;
 	}
 	cout<<"No of bits will change "<<count<<endl;	
 }

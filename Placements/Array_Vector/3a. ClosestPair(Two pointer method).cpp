@@ -4,7 +4,7 @@
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
  * Time complexity : O(n)
- * Title :  Closest Pair/ Two pointer method
+ * Title :  Closest Pair of points in two sorted array
  */
 #include<bits/stdc++.h>
 using namespace std;

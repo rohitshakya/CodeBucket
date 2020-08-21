@@ -4,8 +4,8 @@
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
  * Time complexity : O(n^2)
- * Title : search triplet whose sum is equal to given number x
- * Note : Array should be sorted
+ * Title : Search triplet whose sum is equal to given number x
+ * Note : Array must be sorted for two pointer method
  */
 
 #include<bits/stdc++.h>
