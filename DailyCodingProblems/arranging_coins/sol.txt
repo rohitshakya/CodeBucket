@@ -1,0 +1,23 @@
+
+
+
+class Solution {
+public:
+    int arrangeCoins(int n) {
+      int c=0;
+       int i=1;
+        while(n)
+        {
+             if(n>=i)
+              
+             {
+              n=n-i;
+              c++;
+              i++;
+             }
+          else
+              break;
+        }
+      return c;
+    }
+};
