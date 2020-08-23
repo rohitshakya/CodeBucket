@@ -1,5 +1,11 @@
-// Iterative method to find deepest node of Binary Tree  
-#include<iostream>
+/*
+ * Author : Rohit Shakya
+ * Date   : Aug-2020
+ * Compiler : g++ 4.9.2
+ * Flags    : -std=c++14
+ * Time complexity :
+ * Title : Iterative method to find deepest node of Binary Tree  
+ */
 #include<bits/stdc++.h>
 using namespace std;
 struct Node
@@ -16,14 +22,12 @@ Node* deep(Node *root)
 {
     queue<Node*> q;
     Node *temp;
-   if(root==NULL) return NULL;
-   
-   q.push(root);
-   while(!q.empty())
-   {
+    if(root==NULL) return NULL;
+    q.push(root);
+    while(!q.empty())
+    {
        temp=q.front();
-       q.pop();
-       
+       q.pop();   
        if(temp->left)
          q.push(temp->left);
         if(temp->right)
@@ -42,10 +46,10 @@ int main()
     root->left->left=new Node(4);
     root->left->right=new Node(5);
     Node *res=deep(root);
-   cout<<"\n Deepest node of a Tree is  : \n"<<res;
-   cout<<"\n data of that deepest node is :"<<res->data;
-   
+    cout<<"Deepest node of a Tree is: "<<res<<endl;
+    cout<<"Data of that deepest node is: "<<res->data;
     return 0;
 }
+
 
 

@@ -1,6 +1,11 @@
-
-// Delete binary tree using post order
-#include<iostream>
+/*
+ * Author : Rohit Shakya
+ * Date   : Aug-2020
+ * Compiler : g++ 4.9.2
+ * Flags    : -std=c++14
+ * Time complexity :
+ * Title : Delete binary tree using post order
+ */
 #include<bits/stdc++.h>
 using namespace std;
 struct Node
@@ -27,16 +32,15 @@ void delete_tree(Node *root)
 int main()
 {
     Node *root = new Node(1);
-    root->left=new Node(2);
-    root->right=new Node(3);
+    root->left = new Node(2);
+    root->right = new Node(3);
     root->left->left=new Node(4);
     root->left->right=new Node(5);
-    
-   cout<<"\n After deletion  Tree is  : \n";
-   delete_tree(root);
-   cout<<"\n Tree is deleted !";
+    delete_tree(root);
+    cout<<"Tree is deleted !";
     return 0;
 }
+
 
 
 
