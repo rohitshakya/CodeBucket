@@ -1,0 +1,66 @@
+// To check two trees are identical or not 
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+struct Node
+{
+    int data;
+    Node *left , *right;
+    Node(int d)
+    {
+        data=d;
+        left=right=NULL;
+    }
+};
+
+int identical(Node*root1 , Node *root2)
+{
+    // base cond
+    if(root1==NULL && root2==NULL)
+      return 1;
+    if(root1==NULL && root2!=NULL)
+       return 0;
+    if(root1!=NULL && root2==NULL)
+       return 0;
+       
+       
+        if (root1->data==root2->data)
+        {
+            int l=identical(root1->left , root2->left);
+            if(l==1)    // if left subtree is same
+            {
+                int r= identical (root1->right , root2->right);
+                 return r;
+            }
+        }
+    return 0;
+}
+
+
+
+
+int main()
+{
+    Node *root1 = new Node(1);
+    root1->left=new Node(2);
+    root1->right=new Node(3);
+    root1->left->left=new Node(4);
+    root1->left->right=new Node(5);
+     root1->right->left=new Node(6);
+
+    Node *root2 = new Node(1);
+    root2->left=new Node(2);
+    root2->right=new Node(3);
+    root2->left->left=new Node(4);
+    root2->left->right=new Node(5);
+     root2->right->left=new Node(7);
+    int  ans=identical(root1 , root2);
+    if (ans==1)
+           cout<<"\nTwo trees are identical \n";
+   else
+   cout<<"\n Two trees are not identical \n";
+
+   
+    return 0;
+}
+

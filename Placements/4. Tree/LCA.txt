@@ -1,0 +1,20 @@
+
+class Solution {
+public:
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {
+        //base case
+        if(!root)
+            return NULL;
+         // search p and q using preorder
+        if(root==p || root==q)
+            return root;
+        TreeNode *l=lowestCommonAncestor(root->left, p,q);
+        TreeNode *r=lowestCommonAncestor(root->right, p,q);
+        
+        // check returns
+        if(l && r)
+            return root;
+        else
+            return (l?l:r);
+    }
+};
