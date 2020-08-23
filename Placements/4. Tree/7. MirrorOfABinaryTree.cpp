@@ -32,7 +32,6 @@ int areMirror(Node* a, Node* b)
 			areMirror(a->right, b->left); 
 } 
 
-/* Helper function that allocates a new node */
 Node* newNode(int data) 
 { 
 	Node* node = new Node; 
@@ -41,7 +40,6 @@ Node* newNode(int data)
 	return(node); 
 } 
 
-/* Driver program to test areMirror() */
 int main() 
 { 
 	Node *a = newNode(1); 

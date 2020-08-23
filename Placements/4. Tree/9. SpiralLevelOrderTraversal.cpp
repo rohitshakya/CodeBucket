@@ -52,8 +52,7 @@ void givenLevel(Node * root, int level, int itr)
 		{
 			givenLevel(root->right,level-1,itr);	
 			givenLevel(root->left,level-1,itr);
-		}
-		
+		}	
 	}
 }
 
