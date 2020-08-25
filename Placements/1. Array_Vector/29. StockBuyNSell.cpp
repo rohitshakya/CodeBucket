@@ -5,6 +5,8 @@
  * Flags    : -std=c++14
  * Time complexity :
  * Title : stock buy and sell
+ * Note: Another approaches are 1) to sort array and swap accordinly and another one is to
+ * find next greater element using stack
  */
 #include <bits/stdc++.h> 
 using namespace std; 
