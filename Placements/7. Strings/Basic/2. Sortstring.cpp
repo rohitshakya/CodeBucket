@@ -10,7 +10,7 @@
 using namespace std;
 int main()
 {
-	string s ="rohitmncjn";
+	string s ="firstString";
 	sort(s.begin(),s.end());
 	string s2="hi this is rohit shakya";
 	sort(s2.begin(),s2.end(),greater<int>());
