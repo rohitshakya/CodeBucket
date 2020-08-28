@@ -29,6 +29,7 @@ int lcs(char *x,char *y, int m,int n)
 			else
 			l[i][j]=max(l[i-1][j],l[i][j-1]);
 		}
+		
 	}
 	return l[m][n];
 }
