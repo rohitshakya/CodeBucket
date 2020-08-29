@@ -10,9 +10,7 @@
 using namespace std;
 int min(int a, int b, int c)
 {
-	if(a<=b&&a<=c) return a;
-	else if(b<=a&&b<=c) return b;
-	else return c;
+	return min(min(a,b),c);
 }
 int main()
 {
