@@ -10,7 +10,7 @@
 using namespace std;
 int main()
 {
-	int arr[]={1,2,3,4,6,7,9,10,8};
+	int arr[]={1,2,3,4,6,7,8,9,10};
 	int n=10;
 	int x=0;
 	int i;

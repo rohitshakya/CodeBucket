@@ -4,7 +4,7 @@
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
  * Time complexity : O(n)
- * Title : Merge two sorted array
+ * Title : Merge two sorted array //recusrion and hashmap are alternate method with good time complexities
  */
 #include<bits/stdc++.h>
 using namespace std;
