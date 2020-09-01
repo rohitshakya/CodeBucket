@@ -8,15 +8,15 @@
  */
 #include<bits/stdc++.h>
 using namespace std;
-int count(int arr[], int n, int i, int k)
+int count(int arr[], int n, int i, int sum)
 {
 	
 	if(i==n)
 	{
-		if(k==0) return 1;
+		if(sum==0) return 1;
 		else return 0;
 	}
-	return count(arr,n,i+1,k-arr[i])+count(arr,n,i+1,k); 
+	return count(arr,n,i+1,sum-arr[i])+count(arr,n,i+1,sum); 
 }
 int main()
 {

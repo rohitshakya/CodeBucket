@@ -1,0 +1,43 @@
+
+#include <bits/stdc++.h> 
+using namespace std; 
+void rev(queue<int> q, int k)
+{
+    stack <int> s;
+    int q_size=q.size();
+    for(int i=0;i<k;i++)
+    {
+        int f=q.front();
+        q.pop();
+        s.push(f);
+    }
+    while(!s.empty())
+    {
+        int t= s.top();
+        s.pop();
+        q.push(t);
+    }
+    for(int i=0;i<(q_size-k);i++ )
+    {
+        int x=q.front();
+        q.pop();
+        q.push(x);
+    }
+    for(int i=0;i<q_size();i++)
+    {
+        cout<<q.top()<<" ";
+        q.pop();
+    }
+}
+int main() 
+{ 
+    queue <int> q;
+    int k=3;
+    q.push(1);
+    q.push(2);
+    q.push(3);
+    q.push(4);
+    q.push(5);
+    rev(q,k);
+    return 0; 
+} 

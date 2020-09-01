@@ -1,0 +1,1 @@
+implement stack using 1 queue

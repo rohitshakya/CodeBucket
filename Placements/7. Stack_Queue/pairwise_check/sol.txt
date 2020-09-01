@@ -1,0 +1,46 @@
+
+#include <bits/stdc++.h> 
+using namespace std; 
+bool find(stack<int> s)
+{
+    queue <int> q;
+    int c=0;
+    while(!s.empty())
+    {
+        int t=s.top();
+        q.push(t);
+        s.pop();
+        c++;          // for odd even checking
+    }
+    if (c%2!=0)
+       q.pop();
+       while(!q.empty())
+       {
+    int x=q.front();
+    q.pop();
+    int y=q.front();
+    q.pop();
+    if(abs(x-y)==1)
+        continue;
+    else
+    return false;
+       }
+       return true;
+}
+int main() 
+{ 
+    stack <int> s;
+    s.push(4);
+    s.push(5);
+    s.push(-2);
+    s.push(-3);
+    s.push(11);
+    s.push(10);
+    s.push(5);
+    s.push(6);
+    s.push(20);
+    bool ans=find(s);
+    cout<<ans;
+	return 0; 
+} 
+
