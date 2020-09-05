@@ -19,15 +19,18 @@ int profit(int arr[],int wt[],int n,int w)
 	int table[n+1][w+1];
 	int i,j;
 	for(i=0;i<=n;i++)
-	for(j=0;j<=w;j++)
 	{
-		if(i==0||j==0)
-		table[i][j]=0;
-		else if(wt[i-1]<=j)
-		table[i][j]=max(table[i-1][j-wt[i-1]]+arr[i-1],table[i-1][j]);
-		else 
-		table[i][j]=table[i-1][j];
+		for(j=0;j<=w;j++)
+		{
+			if(i==0||j==0)
+			table[i][j]=0;
+			else if(wt[i-1]<=j)
+			table[i][j]=max(table[i-1][j-wt[i-1]]+arr[i-1],table[i-1][j]);
+			else 
+			table[i][j]=table[i-1][j];
+		}
 	}
+	
 	return table[n][w];
 }
 int main()
