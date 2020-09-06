@@ -9,13 +9,8 @@
  */
 #include<iostream>
 using namespace std;
-int main()
+bool subArray(int arr[],int n, int givenSum)
 {
-	int arr[]={1,2,5,7,12,56,34};
-	int n=sizeof(arr)/sizeof(arr[0]);
-	int givenSum;
-	cout<<"enter given number"<<endl;
-	cin>>givenSum;
 	int init=0;
 	int currSum=0;
 	int flag=0;
@@ -36,5 +31,15 @@ int main()
 		else
 		currSum+=arr[i];
 	}
-	if(!flag) cout<<"Not found"<<endl;
-	}
+	return flag;
+}
+int main()
+{
+	int arr[]={1,2,5,7,12,56,34};
+	int n=sizeof(arr)/sizeof(arr[0]);
+	int givenSum;
+	cout<<"enter given number"<<endl;
+	cin>>givenSum;
+	bool a=subArray(arr,n,givenSum);
+	if(!a) cout<<"Not Found"<<endl;
+}
