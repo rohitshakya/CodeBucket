@@ -18,6 +18,7 @@ int main()
 	{
 		sum+=a[i];
 	}
+	if(sum&1) return -1;
 	int leftsum=0;
 	for(int i=0;i<n;i++)
 	{
@@ -29,4 +30,5 @@ int main()
 			break;
 		}	
 	}
+	return 0;
 }

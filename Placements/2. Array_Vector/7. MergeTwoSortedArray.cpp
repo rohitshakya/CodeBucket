@@ -1,32 +1,24 @@
-/*
- * Author : Rohit Shakya
- * Date   : July-2020
- * Compiler : g++ 4.9.2
- * Flags    : -std=c++14
- * Time complexity : O(n)
- * Title : Merge two sorted array //recusrion and hashmap are alternate method with good time complexities
- */
-#include<bits/stdc++.h>
-using namespace std;
-int main()
-{
-	int a[]={1,2,2,2,3,3,3,5,6,7};
-	int b[]={1,3,12,12,13,13,13,15,16,17};
-	vector<int> v;
-	int i=0,j=0;
-	while(i+j<20)
-	{
-		if(a[i]<=b[j])
-		{
-			v.push_back(a[i++]);
-		}
-		else
-		{
-			v.push_back(b[j++]);
-		}
-	}
-	for(i=0;i<v.size();i++)
-	{
-		cout<<v[i]<<" ";
-	}
-}
+// C++ program to merge two sorted arrays using maps, another methods are merge function of merge sort and using extra space 
+//and sort by insertion sort 
+#include<bits/stdc++.h> 
+using namespace std; 
+void mergeArrays(int a[], int b[], int n, int m) 
+{ 
+	map<int, bool> mp; 
+	for(int i = 0; i < n; i++) 
+	mp[a[i]] = true; 
+	
+	for(int i = 0;i < m;i++) 
+	mp[b[i]] = true; 
+	for(auto i: mp) 
+	cout<< i.first <<" "; 
+} 
+int main() 
+{ 
+	int a[] = {1, 3, 5, 7}, b[] = {2, 4, 6, 8}; 
+	int size = sizeof(a)/sizeof(int); 
+	int size1 = sizeof(b)/sizeof(int);
+	mergeArrays(a, b, size, size1); 	
+	return 0; 
+} 
+

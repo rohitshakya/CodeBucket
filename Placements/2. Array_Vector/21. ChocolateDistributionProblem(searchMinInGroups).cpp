@@ -4,7 +4,7 @@
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
  * Time complexity : O(nlogn)
- * Title : Chocolate distribution problem
+ * Title : Chocolate distribution problem //search min in groups
  */
 #include<bits/stdc++.h> 
 using namespace std; 

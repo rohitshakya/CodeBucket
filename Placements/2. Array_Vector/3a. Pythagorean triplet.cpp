@@ -12,7 +12,8 @@ int main()
 {
 	int arr[]={1,2,3,-1,5,6,4};
 	//squared the array
-	int n=sizeof(arr)/sizeof(arr[0]);
+	//int n=sizeof(arr)/sizeof(arr[0]);
+	int n=*(&arr+1)-arr;
 	for(int i=0;i<n;i++)
 	{
 		arr[i]*=arr[i];
