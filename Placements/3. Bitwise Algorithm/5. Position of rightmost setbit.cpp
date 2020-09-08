@@ -18,4 +18,8 @@ int main()
 		x=x>>1;
 	}
 	cout<<"Position of right most set bit "<<position<<endl;
+	//find rightmost Set bit
+	int a=8;
+	a=a&~(a-1);
+	cout<<a;
 }

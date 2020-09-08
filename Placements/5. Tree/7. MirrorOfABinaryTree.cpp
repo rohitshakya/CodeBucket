@@ -48,12 +48,10 @@ int main()
 	a->right = newNode(3); 
 	a->left->left = newNode(4); 
 	a->left->right = newNode(5); 
-
 	b->left = newNode(3); 
 	b->right = newNode(2); 
 	b->right->left = newNode(5); 
 	b->right->right = newNode(4); 
-
 	areMirror(a, b)? cout << "Yes" : cout << "No"; 
 
 	return 0; 

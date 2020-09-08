@@ -31,6 +31,7 @@ void inOrder(Node *root)
 			s.push(curr);
 			curr=curr->left;
 		}
+		curr=s.top();
 		cout<<s.top()->data<<" ";
 		s.pop();
 		curr=curr->right;

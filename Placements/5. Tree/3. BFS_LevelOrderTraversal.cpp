@@ -50,7 +50,6 @@ void givenLevel(Node *root, int level)
 void printLevelOrder(Node *root)
 {
 	int h=treeHeight(root);
-	bool flag=false;
 	for(int i=0;i<=h;i++)
 	{
 		givenLevel(root,i);

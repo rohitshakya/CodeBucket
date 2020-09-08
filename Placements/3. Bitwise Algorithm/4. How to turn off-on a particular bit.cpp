@@ -9,7 +9,7 @@
 using namespace std;
 int main()
 {
-	//how to turn off the particular bit in a number, create a mask for the particular position then or it with the number
+	//how to turn on the particular bit in a number, create a mask for the particular position then or it with the number
 	int x=100;
 	int pos=3;
 	int mask;
@@ -19,7 +19,7 @@ int main()
 	int y=15;
 	pos=4;
 	mask=1<<(pos-1);
-	//how to turn on the particular bit in a number, create a mask for the particular position then and with negative of mask 
+	//how to turn off the particular bit in a number, create a mask for the particular position then and with negative of mask 
 	y&=~mask;
 	cout<<"X after turned off the position bit "<<y<<endl;
 }
