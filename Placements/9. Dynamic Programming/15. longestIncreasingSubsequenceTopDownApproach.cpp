@@ -22,6 +22,14 @@ int lcs(int *x,int n)
 	if(x[i-1]>=x[i-2]) table[i]=table[i-1]+1;
 	else table[i]=table[i-1];
 	}
+	//for printint LIS
+	int index=table[n];
+	int arr[n];
+	for(int i=0;i<n;i++)
+	{
+		if(table[i]<table[i+1])
+		cout<<x[i]<<" ";
+	}
 	return table[n];
 }
 int main()

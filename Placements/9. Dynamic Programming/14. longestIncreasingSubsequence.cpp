@@ -8,14 +8,14 @@
  */
 #include<bits/stdc++.h>
 using namespace std;
-int max(int a, int b)
-{
-	return a>b?a:b;
-}
 int lcs(int *x,int n)
 {
 	if(n==0) return 0;
-	if(x[n-1]>=x[n-2]) return lcs(x,n-1)+1;
+	if(x[n-1]>=x[n-2]) 
+	{
+		cout<<x[n-1]<<" ";
+		return lcs(x,n-1)+1;	
+	}
 	else return lcs(x,n-1);
 }
 int main()
