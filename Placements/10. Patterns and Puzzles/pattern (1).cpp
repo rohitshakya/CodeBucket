@@ -1,19 +1,3 @@
-/*
- * Author : Rohit Shakya
- * Date   : April-2020
- * Compiler : g++ 5.1.0
- * flags    : -std=c++14
- */
-
-/* 
- 1
- 2 3
- 6 5 4
- 7 8 9 10
- 15 14 13 12 11
- Do increment count after every print, for even rows print directly and for odd rows increment count as maximum and decrement it.
- and reasign count=count temp for next row;
- */
 #include<bits/stdc++.h>
 using namespace std;
 int main()
@@ -45,3 +29,13 @@ int main()
 		cout<<endl;
 	}
 }
+/* 
+ 1
+ 2 3
+ 6 5 4
+ 7 8 9 10
+ 15 14 13 12 11
+ Do increment count after every print, for even rows print directly and for odd rows increment count as maximum and decrement it.
+ and reasign count=count temp for next row;
+ */
+
