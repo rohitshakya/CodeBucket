@@ -22,3 +22,4 @@ int main()
 		x=x^i;
 	}
 	cout<<x;
+	}
