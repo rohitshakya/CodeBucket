@@ -11,7 +11,6 @@ using namespace std;
 float getAvg(int x) 
 { 
 	static int sum, n; 
-
 	sum += x; 
 	return (((float)sum) / ++n); 
 } 
