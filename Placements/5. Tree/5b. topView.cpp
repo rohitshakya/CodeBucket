@@ -4,19 +4,15 @@
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
  * Time complexity :
- * Title : Program to print top View of Binary Tree
- */ 
+ * Title : C++ Program to print Top View of Binary Tree 
+ */
 #include<bits/stdc++.h> 
 using namespace std; 
-
-// Tree node class 
 struct Node 
 { 
 	int data; //data of the node 
 	int hd; //horizontal distance of the node 
 	Node *left, *right; //left and right references 
-
-	// Constructor of tree node 
 	Node(int key) 
 	{ 
 		data = key; 
@@ -25,11 +21,9 @@ struct Node
 	} 
 }; 
 
-// Method that prints the bottom view. 
-void topView(Node *root) 
+void topView(Node *root)
 {
-	if(root==NULL)
-	return ;
+	if(root==NULL) return;
 	int hd=0;
 	root->hd=hd;
 	queue<Node*> q;
@@ -37,17 +31,17 @@ void topView(Node *root)
 	map<int,int> m;
 	while(!q.empty())
 	{
-		Node *temp=q.front();
+		Node* temp=q.front();
 		q.pop();
 		hd=temp->hd;
-		if(m[hd]==0)
+		if(m[hd]==0) //condition for existance for the top view
 		m[hd]=temp->data;
-		if(temp->left!=NULL)
+		if(temp->left)
 		{
 			temp->left->hd=temp->hd-1;
 			q.push(temp->left);
 		}
-		if(temp->right!=NULL)
+		if(temp->right)
 		{
 			temp->right->hd=temp->hd+1;
 			q.push(temp->right);
@@ -56,9 +50,9 @@ void topView(Node *root)
 	for(auto i=m.begin();i!=m.end();i++)
 	{
 		cout<<i->second<<" ";
-	 } 
- 
+	}
 }
+
 int main() 
 { 
 	Node *root = new Node(20); 

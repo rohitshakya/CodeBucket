@@ -14,7 +14,7 @@ void swap(int &a,int &b)
 	a=b;
 	b=temp;
 }
-void zigZag(int arr[], int n) 
+void zigZag(int arr[],int n)
 {
 	bool flag=true;
 	for(int i=0;i<n-1;i++)
@@ -36,7 +36,6 @@ void zigZag(int arr[], int n)
 		flag=!flag;
 	}
 }
-
 int main() 
 { 
 	int arr[] = {4, 3, 7, 8, 6, 2, 1}; 

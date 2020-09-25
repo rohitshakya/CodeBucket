@@ -9,15 +9,11 @@
 // C++ Program to print Bottom View of Binary Tree 
 #include<bits/stdc++.h> 
 using namespace std; 
-
-// Tree node class 
 struct Node 
 { 
 	int data; //data of the node 
 	int hd; //horizontal distance of the node 
 	Node *left, *right; //left and right references 
-
-	// Constructor of tree node 
 	Node(int key) 
 	{ 
 		data = key; 
