@@ -4,10 +4,9 @@
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
  * Time complexity : O(2^n)
- * Title : knapsack problem
+ * Title : knapsack problem :given two arrays value array and weight array, size of two array and capacity, 
+ find out the max profit
  */
-//problem statement : given two arrays value array and weight array, size of two array and capacity,
-// find out the max profit
 #include<bits/stdc++.h>
 using namespace std;
 int max(int a,int b)

@@ -9,8 +9,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int count(int arr[], int n, int i, int sum)
-{
-	
+{	
 	if(i==n)
 	{
 		if(sum==0) return 1;

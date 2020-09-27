@@ -22,7 +22,8 @@ int fun(int arr[],int n, int diff)
 	int sum=0;
 	for(int i=0;i<n;i++)
 	sum+=arr[i];
-	sum=(sum+diff)/2;
+	sum=(sum+diff)/2; // sum of subset 1 is x and sum of subset 2 is y, so sum sum is x+y and diff is x-y by adding equation we 
+	// get x=(sum+diff)/2; so if there exist x, y will definitely exist
 	return fun2(arr,n,sum);
 }
 int main()
