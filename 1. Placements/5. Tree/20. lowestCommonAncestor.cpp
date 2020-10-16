@@ -1,4 +1,11 @@
-/* C++ Program to find LCA of n1 and n2 using one traversal of Binary Tree */
+/*
+ * Author : Rohit Shakya
+ * Date   : Aug-2020
+ * Compiler : g++ 4.9.2
+ * Flags    : -std=c++14
+ * Time complexity :
+ * Title : C++ Program to find LCA of n1 and n2 using one traversal of Binary Tree 
+ */
 #include <bits/stdc++.h> 
 using namespace std;  
 struct Node 

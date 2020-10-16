@@ -6,7 +6,6 @@
  * Time complexity :
  * Title : To print root-to-leaf paths
  */
-#include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
 struct Node
@@ -32,12 +31,10 @@ void find_paths(Node *root , int path[], int pathlen)
     
     path[pathlen]=root->data;
     pathlen++;
-    
-    //check leaf
     if(root->left==NULL && root->right==NULL)
     {      
     print(path , pathlen);
-       cout<<"\n";
+    cout<<"\n";
     }  
     else
     {
@@ -57,7 +54,7 @@ int main()
     root->left->right=new Node(5);
     root->right->left=new Node(6);
     cout<<"\n Paths from root to leaf are   \n";
-    find_paths(root,path , pathlen);
+    find_paths(root, path, pathlen);
     return 0;
 }
 

@@ -6,8 +6,6 @@
  * Time complexity :
  * Title : searching element without using recursion
  */
-
-#include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
 struct Node
@@ -53,7 +51,7 @@ int main()
     
     bool ans=find(root,2);
     if(ans==1)
-    cout<<"\nFOUND !!";
+    cout<<"\n FOUND !!";
     else
     cout<<"\n NOT FOUND !!";    
     return 0;

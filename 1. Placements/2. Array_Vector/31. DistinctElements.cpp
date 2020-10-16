@@ -3,8 +3,8 @@
  * Date   : July-2020
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
- * Time complexity : 
- * Title : 
+ * Time complexity : O(n)
+ * Title : minimum number of operation in array to remove duplicates
  */
 #include<bits/stdc++.h>
 using namespace std; 

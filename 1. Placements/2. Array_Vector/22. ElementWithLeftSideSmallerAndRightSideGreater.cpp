@@ -39,7 +39,8 @@ int main()
 { 
 	int arr[] = {5, 1, 4, 3, 6, 8, 10, 7, 9}; 
 	int n = sizeof arr / sizeof arr[0]; 
-	cout << "Index of the element is " << findElement(arr, n); 
+	int x=findElement(arr, n);
+	cout << "Index of the element is " <<x<<" and the element is "<<arr[x]; 
 	return 0; 
 } 
 //Note: When we have to compare with two values at the same time, pre compute them and store in extra space and use them in next traversal

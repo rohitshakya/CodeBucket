@@ -4,7 +4,7 @@
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
  * Time complexity : O(n)
- * Title : Height of a binary tree
+ * Title : balance_factor
  */
 #include<bits/stdc++.h>
 using namespace std;
@@ -31,6 +31,17 @@ int height(Node *root)
 		return rdepth+1;
 	}
 }
+
+int degree_of_imbalance(Node *root)
+{
+	int static max=INT_MIN;
+	int lh=height(root->left);
+	int rh=height(root->right);
+	int temp=abs(lh-rh)+1;
+	if(temp>max) max=temp;
+	return max;
+}
+
 int main()
 {
 	Node *root=new Node(2);
@@ -39,6 +50,6 @@ int main()
 	root->left->left=new Node(19);
 	root->left->right=new Node(8);
 	root->left->right=new Node(1);
-	cout<<"Height of a binary tree: "<<height(root)<<endl;
+	cout<<"Height of a binary tree: "<<degree_of_imbalance(root)<<endl;
 }
 

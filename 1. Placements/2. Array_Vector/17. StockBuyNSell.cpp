@@ -16,11 +16,11 @@ void stockBuySell(int arr[], int n)
 	int i=0;
 	while(i<n-1)
 	{
-		while(i<n&&arr[i+1]<arr[i])
+		while(i<n&&arr[i]>arr[i+1])
 		i++;
 		if(i==n-1) break;
 		int buy=i++;
-		while(i<n&&arr[i]>arr[i-1])
+		while(i<n&&arr[i-1]<arr[i])
 		i++;
 		int sell=i-1;
 		cout<<"best price to buy "<<buy<<endl<<"best price to sell "<<sell<<endl;

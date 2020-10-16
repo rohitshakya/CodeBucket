@@ -10,7 +10,6 @@ using namespace std;
 int main()
 {
 	int a=17,b=27; //Count number of bits to be flipped to convert A to B, 
-	//a^b contains only flipped bits, so count the set bits in a^b
 	int count=0;
 	axorb=a^b;
 	while(axorb)

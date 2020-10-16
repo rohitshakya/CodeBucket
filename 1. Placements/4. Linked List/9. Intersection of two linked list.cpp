@@ -6,8 +6,6 @@
  * time complexity : O(n)
  * title :  intersection of two linked list
  */
-
-
 /**
  * Definition for singly-linked list.
  * struct ListNode {

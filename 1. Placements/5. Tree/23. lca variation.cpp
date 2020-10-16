@@ -8,10 +8,10 @@ int main()
 int isSubTree(tnode* root1, tnode* root2)
 {
 	 if (root1 == NULL && root2 == NULL)  
-        return 0;  
+        return 1;  
   
     if (root1 == NULL || root2 == NULL)  
-        return 1;  
+        return 0;  
     return (root1->data == root2->data &&  
             isSubTree(root1->left, root2->left) && isSubTree(root1->right, root2->right) ); 
 }
