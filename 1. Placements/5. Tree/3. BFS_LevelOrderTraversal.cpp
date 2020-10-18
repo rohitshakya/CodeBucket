@@ -29,7 +29,7 @@ void printTree(Node *root, int &count)
 }
 int treeHeight(Node *root)
 {
-	if(root==NULL) return -1;
+	if(root==NULL) return 0;
 	else
 	{
 		int l=treeHeight(root->left);
