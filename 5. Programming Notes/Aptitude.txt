@@ -1,4 +1,130 @@
-Three cubes of edges 6 cms, 8 cms and 10 cms are meted without loss of metal into a single cube. The edge of the new cube will be:
+1) A is able to do a piece of work in 15 days and B can do the same work in 20 days. If they can work together for 4 days, what is the fraction of work left?
+8/15
+7/15
+11/15
+2/11
+Other than those given as options
+Answer & Explanation
+
+Answer : Option A.
+Total work done by A + B in 1 day = 1/15 + 1/(20 ) = 7/60
+Work done in 4 days = 7/60 × 4 = 7/15
+Therefore, fraction of work left = 1 - 7/15 = 8/15
+
+2) Cost price of each of the articles A and B is Rs. 'X'. Article A was sold at a profit of 10% and article B was sold at a profit of 30%. If the overall profit earned after selling both the articles is Rs. 136/-, what is the value of 'X'?
+Rs.340/-
+Rs.300/-
+Rs.360/-
+Rs.380/-
+Rs.320/-
+Answer & Explanation
+
+Answer : Option A.
+Given : 0.1x + 0.3x = 136 => x = 340
+
+3)Population of a village increased by 5% from 2007 to 2008 and by 25% from 2008 to 2009. If the population of the village was 480 in 2007, what was its population in 2009?
+640
+610
+630
+620
+650
+Answer & Explanation
+
+Answer : Option C.
+Population in 2007 = 480
+In 2008 = 1.05 × 480 = 504
+In 2009 = 1.25 × 504 = 630
+24% of 150 × 3/4= ?
+64
+40
+72
+24
+48
+Answer & Explanation
+
+Answer : Option E.
+24% of 150 × 3/4= x = 36 × 4/3 = 48
+3/17 of 20% of 510 + 7 = x2
+5
+10
+21
+15
+27
+Answer & Explanation
+
+Answer : Option A.
+3/17 of 20% of 510 + 7 = x2
+3/17 × 20/100 × 510 + 7 = 18 + 7 = 25 => x = 5
+
+4) In the month of March, Hiten spent 45% of his monthly salary on paying bill and rent. Out of the remaining salary, he invested 60% in PPF and the remaining he deposited in bank. He deposited Rs. 15,400 in bank. If in April, he got an increment of 10%, what was his salary in April?
+Rs. 84,000
+Rs. 77,000
+Rs. 1,10,000
+Rs. 59,000
+Rs. 68,000
+Answer & Explanation
+
+Answer : Option B.
+Let the initial salary of Hiten be ‘S’. Then:
+(0.55 × 0.4) S = 15400 => S = 70000
+After increment, Hiten’s salary = 1.1 × 70000 = 77000
+
+5) A person covers a certain distance by travelling at a uniform speed of 120 km/h for 90 minutes. At what speed will he have to travel in order to cover the same distance in 1 hour 20 minutes? (in km/h)
+135
+125
+140
+130
+145
+Answer & Explanation
+
+Answer : Option A.
+Distance = 120 × 90/60 = 180 km Speed required to cover 180 km in 1 hr 20 mins ( 4/3 hrs) = 180 × ¾ = 135 km/hr
+
+6) In Jar A, 120 litres milk was mixed with 24 litre water. 12 litre of this mixture was taken out and 3 litre water was added. If 27 litre of newly formed mixture is taken out, what will be the resultant quantity of water in the jar? (In litre)
+20
+10
+15
+30
+25
+Answer & Explanation
+
+Answer : Option A.
+Ratio of milk : water in Jar A = 120 : 24 = 5 : 1
+12 lts of this mixture is taken out => milk = 5/6 × 12 = 10 lts and water = 2 lts taken out
+3 lts of water added = 24 – 2 + 3 = 25 lts => new ratio of milk : water
+= 110 : 25 = 22 : 5
+Now 27 lts of this mixture is again taken out =>
+water taken out = 5/27 × 27 = 5 lts
+water left = 25 – 5 = 20 lts
+
+7) A boat, whose speed in 15 km/hr in still water goes 30 km downstream and comes back in a total of 4 hours 30 minutes. What is the speed of the stream? (in km/hr)
+10
+6
+5
+4
+15
+Answer & Explanation
+
+Answer : Option C.
+Speed of boat = 15 k/h
+Let the speed of stream be ‘S’
+Given : 30/(15+S) + 30/(15-S) = 9/2
+Solving we get, S = 5 km/h
+8) Six years ago, the ratio of the ages of Kunal and Sagar was 6 : 5. Four years hence, the ratio of their ages will be 11:10. What is Sagar's present age?
+16 years
+18 years
+20 years
+22 years
+25 years
+Answer & Explanation
+
+Answer : Option A.
+Let the ages of Kunal and Sagar be K and S respectively.
+Given : (K-6)/(S-6) = 6/5 => 5K – 6S = -6 ……(i)
+And: (K+4)/(S+4) = 11/10 => 10K – 11 S = 4 …..(ii)
+Solving (i) & (ii) we get: S = 16 years.
+
+9) Three cubes of edges 6 cms, 8 cms and 10 cms are meted without loss of metal into a single cube. The edge of the new cube will be:
 a) 16 cm
 b) 14 cm
 c) 12 cm
@@ -10,7 +136,7 @@ Volume of new cube = Volume of cube 1 + cube 2 + cube 3 = 63 + 83 + 103 = 216 + 
 a^3 = 1728,
 a = (1728)^(1/3) = 12
 
-A reduction in the price of mangoes by 20% enables a farmer to purchase 12 more mangoes for Rs. 15. So what could be the price of 16 mangoes before the reduction of the price?
+10) A reduction in the price of mangoes by 20% enables a farmer to purchase 12 more mangoes for Rs. 15. So what could be the price of 16 mangoes before the reduction of the price?
 a) Rs. 9
 b) Rs. 7
 c) Rs. 5
