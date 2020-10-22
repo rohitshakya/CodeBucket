@@ -34,7 +34,8 @@ Answer : Option C.
 Population in 2007 = 480
 In 2008 = 1.05 × 480 = 504
 In 2009 = 1.25 × 504 = 630
-24% of 150 × 3/4= ?
+
+4) 24% of 150 × 3/4= ?
 64
 40
 72
@@ -43,8 +44,9 @@ In 2009 = 1.25 × 504 = 630
 Answer & Explanation
 
 Answer : Option E.
-24% of 150 × 3/4= x = 36 × 4/3 = 48
-3/17 of 20% of 510 + 7 = x2
+24% of 150 × 3/4= x = 36 × 3/4 = 27
+
+3/17 of 20% of 510 + 7 = x^2
 5
 10
 21
@@ -53,7 +55,7 @@ Answer : Option E.
 Answer & Explanation
 
 Answer : Option A.
-3/17 of 20% of 510 + 7 = x2
+3/17 of 20% of 510 + 7 = x^2
 3/17 × 20/100 × 510 + 7 = 18 + 7 = 25 => x = 5
 
 4) In the month of March, Hiten spent 45% of his monthly salary on paying bill and rent. Out of the remaining salary, he invested 60% in PPF and the remaining he deposited in bank. He deposited Rs. 15,400 in bank. If in April, he got an increment of 10%, what was his salary in April?
@@ -110,6 +112,7 @@ Speed of boat = 15 k/h
 Let the speed of stream be ‘S’
 Given : 30/(15+S) + 30/(15-S) = 9/2
 Solving we get, S = 5 km/h
+
 8) Six years ago, the ratio of the ages of Kunal and Sagar was 6 : 5. Four years hence, the ratio of their ages will be 11:10. What is Sagar's present age?
 16 years
 18 years
