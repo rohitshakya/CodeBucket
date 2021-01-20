@@ -1,5 +1,5 @@
-// C++ program to merge two sorted arrays using maps, another methods are merge function of merge sort and using extra space 
-//and sort by insertion sort 
+// C++ program to merge two sorted arrays using maps, another methods are 
+//merge function of merge sort and using extra space and sort by insertion sort 
 #include<bits/stdc++.h> 
 using namespace std; 
 void mergeArrays(int a[], int b[], int n, int m) 

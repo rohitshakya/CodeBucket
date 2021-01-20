@@ -23,4 +23,7 @@ int main()
 	y&=~mask;
 	cout<<"X after turned off the position bit "<<y<<endl;
 }
+//or for on
+ //and with not for off
+ //and xor for flip
 

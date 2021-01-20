@@ -4,7 +4,7 @@
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
  * Time complexity : 
- * Title : 
+ * Title : remove duplicates from sorted array
  */
 #include<iostream>
 using namespace std;
