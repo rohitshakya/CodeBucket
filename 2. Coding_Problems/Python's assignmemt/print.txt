@@ -1,0 +1,208 @@
+
+# 
+#   Author : Kajal Shakya
+#   Date   : Jan-2021
+#   IDE	   : Python Idle 3.7
+#   Time complexity : O(1)
+#   Title : Vowel or consonent
+# 
+ch=input("enter a character")
+if(ch=='A' or ch=='a' or ch=='E' or ch=='e' or ch=='I' or ch=='i'
+   or ch=='O' or  ch=='o' or  ch=='U' or ch=='u'):
+    print(ch,"is a vowel")
+else:
+    print(ch,"is a consonant")
+
+
+# 
+#   Author : Kajal Shakya
+#   Date   : Jan-2021
+#   IDE	   : Python Idle 3.7
+#   Time complexity : O(1)
+#   Title : Larger of three numbers
+# 
+num1=int(input("enter the first number:"))
+num2=int(input("enter the second number:"))
+num3=int(input("enter the third number:"))
+if(num1>=num2) and (num1>=num3):
+    print("num1 is larger")
+elif(num2>=num1) and (num2>=num3):
+    print("num2 is larger")
+else:
+    print("num3 is larger")
+     
+
+
+# 
+#   Author : Kajal Shakya
+#   Date   : Jan-2021
+#   IDE	   : Python Idle 3.7
+#   Time complexity : O(n)
+#   Title : sum of series s=1+x+x*x+x*x*x+....x**n
+# 
+
+x=int(input("enter the value of x: "))
+n=int(input("enter the value of n: "))
+s=0
+for a in range(n+1):
+    s+=x**a
+print("sum of series",s)
+
+
+# 
+#   Author : Kajal Shakya
+#   Date   : Jan-2021
+#   IDE	   : Python Idle 3.7
+#   Time complexity : O(n)
+#   Title : Prime number
+# 
+num=int(input("enter a number:"))
+#check for factors
+flag=True
+for i in range(2,num):
+    if(num%i)==0:
+        flag=False
+        break
+if(flag):
+    print(num,"is a prime number")
+else:
+    print(num,"is not a prime number")
+
+
+# 
+#   Author : Kajal Shakya
+#   Date   : Jan-2021
+#   IDE	   : Python Idle 3.7
+#   Time complexity : O(n)
+#   Title : Perfect number
+# 
+n=int(input("enter a number:"))
+sum=0
+for i in range(1,n):
+    if(n%i==0):
+        sum=sum+i
+if(sum==n):
+    print(n,"is a perfect number")
+else:
+    print(n,"is not a perfect number")  
+
+
+# 
+#   Author : Kajal Shakya
+#   Date   : Jan-2021
+#   IDE	   : Python Idle 3.7
+#   Time complexity : O(log n)
+#   Title : Palindrome
+# 
+n=int(input("enter the number:"))
+temp=n
+rev=0
+while(n>0):
+    dig=n%10
+    rev=rev*10+dig
+    n=n//10
+if(temp==rev):
+    print("the number is palindrome")
+else:
+    print("the number is not palindrome")
+    
+
+
+# 
+#   Author : Kajal Shakya
+#   Date   : Jan-2021
+#   IDE	   : Python Idle 3.7
+#   Time complexity : O(1)
+#   Title : Larger of two numbers
+# 
+num1=int(input("user enter num1"))
+num2=int(input("user enter num2"))
+if(num1>num2):
+    print("num1 is greater")
+elif(num2>num1):
+    print("num2 is greater")
+else:
+    print("num1 is equal to num2")
+
+
+# 
+#   Author : Kajal Shakya
+#   Date   : Jan-2021
+#   IDE	   : Python Idle 3.7
+#   Time complexity : O(log n)
+#   Title : Check whether a number is armstrong or not
+#  
+number=int(input("enter the number:"))
+result=0
+n=0
+temp=number;
+while(temp !=0):
+    temp=int(temp/10)
+    n=n+1
+#checking if the number armstrong
+temp=number
+while(temp!=0):
+     remainder=temp%10
+     result=result+pow(remainder,n)
+     temp=int(temp/10)
+if(result==number):
+    print("armstrong number")
+else:
+    print(" not a armstrong number")
+    
+# 
+#   Author : Kajal Shakya
+#   Date   : Jan-2021
+#   IDE	   : Python Idle 3.7
+#   Time complexity : O(n)
+#   Title : Find x to power n
+# 
+x=int(input("enter the base: "))
+n=int(input("enter the power: "))
+z=x**n
+print("result: ",z)
+
+
+# 
+#   Author : Kajal Shakya
+#   Date   : Jan-2021
+#   IDE	   : Python Idle 3.7
+#   Time complexity : O(n)
+#   Title : Fibbonacci Series
+#  
+n=int(input("enter thr value of 'n':"))
+a=1
+b=1
+sum=0
+count=3
+print("fibonacci series:",end=" ")
+print(a,end=" ")
+print(b,end=" ")
+while(count<=n):
+   sum=a+b
+   print(sum,end=" ")
+   count += 1
+   a=b
+   b=sum        
+
+
+# 
+#   Author : Kajal Shakya
+#   Date   : Jan-2021
+#   IDE	   : Python Idle 3.7
+#   Time complexity : O(n)
+#   Title : GCD
+#  
+x=int(input("input number 1\n"))
+y=int(input("input number 2\n"))
+i=1
+print("For X: ")
+while x%i !=0 and i<=x:
+    i=i+1
+    print("Gcd is "+i+"\n")
+i=1
+print("For Y: ")
+while y%i !=0 and i<=y:
+    i=i+1
+    print("Gcd is "+i+"\n")
+    
