@@ -1,0 +1,43 @@
+   <div class="col-xl-6">
+                            <div class="form-group">
+                                <label for="validationCustom02" class="col-form-label"><span>*</span> Class</label>
+                                <select name="class" id="validationCustom02" class="form-control" required="" value="1">
+                                    <option value="1">Class 1</option>
+                                    <option value="2">Class 2</option>
+                                    <option value="3">Class 3</option>
+                                    <option value="4">Class 4</option>
+                                    <option value="5">Class 5</option>
+                                    <option value="6">Class 6</option>
+                                    <option value="7">Class 7</option>
+                                    <option value="8">Class 8</option>
+                                    <option value="9">Class 9</option>
+                                    <option value="10">Class 10</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="form-group">
+                                <label for="validationCustom05" class="col-form-label pt-0"><span>*</span> Section</label>
+                                <input name="section"  class="form-control" id="validationCustom05" type="text" required="">
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="form-group">
+                                <label for="validationCustom02" class="col-form-label"><span>*</span> Subject</label>
+                                <select name="subject" id="validationCustom02" class="form-control" required="" value="1">
+                                    <option value="1">English</option>
+                                    <option value="2">Science</option>
+                                    <option value="3">Computer</option>
+                                    <option value="4">Mathematics</option>
+                                    <option value="5">Hindi</option>
+                                    <option value="6">Social Studies</option>
+                                    <option value="7">General Knowledge</option>
+                                    <option value="8">EVS</option>
+                                    <option value="9">Computer Science</option>
+                                    <option value="10">Social Science</option>
+                                    <option value="11">Atlas</option>
+                                    <option value="12">Reasoning and Aptitude</option>
+                                </select>
+                            </div>
+                        </div>
+                        
