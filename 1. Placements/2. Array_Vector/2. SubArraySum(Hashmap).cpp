@@ -1,3 +1,11 @@
+/*
+ * Author : Rohit Shakya
+ * Date   : July-2020
+ * Compiler : g++ 4.9.2
+ * Flags    : -std=c++14
+ * Time complexity : O(n)
+ * Title : subarray sum to a given sum
+ */
 #include<bits/stdc++.h>
 using namespace std;
 void subArray(int arr[],int n, int givenSum)
