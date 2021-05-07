@@ -4,7 +4,7 @@
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
  * Time complexity : O(logn)
- * Title : fist index of one in a sorted array
+ * Title : first index of one in a sorted array
  */
 #include<iostream>
 using namespace std;
