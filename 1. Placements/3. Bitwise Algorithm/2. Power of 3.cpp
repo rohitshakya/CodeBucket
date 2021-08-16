@@ -4,7 +4,7 @@
  * Compiler : g++ 4.9.2
  * flags    : -std=c++14
  * time complexity : O(logn)
- * title :  power of 3
+ * title :  power of 3 or in form of 3^n
  */
 class Solution {
 public:

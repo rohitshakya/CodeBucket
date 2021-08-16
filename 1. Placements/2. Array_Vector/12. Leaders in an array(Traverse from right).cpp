@@ -4,7 +4,7 @@
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
  * Time complexity : O(n)
- * Title : Leaders in an array
+ * Title : Leaders in an array, max in right side
  */
 
 #include <iostream> 
