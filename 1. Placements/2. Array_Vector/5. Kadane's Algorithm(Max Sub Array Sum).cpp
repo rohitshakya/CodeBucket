@@ -4,7 +4,7 @@
  * Compiler : g++ 4.9.2
  * Flags    : -std=c++14
  * Time complexity : O(n)
- * Title : Kadane's Algorithm/ max-Sub-Array-Sum
+ * Title : Kadane's Algorithm/ max-continuos-Sub-Array-Sum
  */
  #include<iostream>
  using namespace std;
