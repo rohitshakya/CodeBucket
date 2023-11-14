@@ -11,17 +11,8 @@
 using namespace std;
 int main()
 {
-	vector<int> a;
-	int n;
-	cout<<"enter the size of vector\n";
-	cin>>n;
-	cout<<"enter the elements of the vector\n";
-	for(int i=0;i<n;i++)
-	{  
-		int input;
-		cin>>input;
-		a.push_back(input);
-	}
+	vector<int> a={1,3,2,4,7,5,8,9,6};
+	int n=a.size();
 	for(int i=0;i<n;i++) 
 	{
 		cout<<a[i]<<" ";

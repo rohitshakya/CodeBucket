@@ -6,7 +6,7 @@
  * Time complexity : O(2^n)
  * Title : knapsack problem
  */
-//problem statement : given two arrays value array and weight array, size of two array and capacity,
+//problem statement : given two arrays, value array and weight array, size of two array and capacity,
 // find out the max profit
 #include<bits/stdc++.h>
 using namespace std;

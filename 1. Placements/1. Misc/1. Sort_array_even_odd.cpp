@@ -4,7 +4,10 @@
  * Compiler : g++ 5.1.0
  * Flags    : -std=c++14
  * Time Complexity: O(nlogn)
- * Title: Given an array A of positive integers, write a program to sort them in such a way that the first part of the array contains odd numbers sorted in descending order and rest of the portion contains even numbers in asceneding order.
+ * Title: Given an array A of positive integers,
+  write a program to sort them in such a way that 
+  the first part of the array contains odd numbers sorted in descending order 
+  and rest of the portion contains even numbers in asceneding order.
  */
 #include<bits/stdc++.h>
 using namespace std;
